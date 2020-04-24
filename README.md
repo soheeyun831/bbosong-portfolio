@@ -1,24 +1,20 @@
 # bbosong-portfolio
 
-## Project setup
+
 ```
-npm install
+안녕하세요.
 ```
 
-### Compiles and hot-reloads for development
+### 사용한 플러그인
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+- sass-loader
+- node-sass
+- vue-waypoint
+- vue-typed-js
+- vue2-animate
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Demo?
+```
+http://bbosongbbosong.com/
+```

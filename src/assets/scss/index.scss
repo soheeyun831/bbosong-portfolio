@@ -1,0 +1,249 @@
+@import "./fonts";
+@import "./color";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+input,
+select,
+textarea label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: "NotoSansKR", sans-serif;
+}
+
+html,
+body {
+  color: $basic-color;
+  width: 100%;
+}
+
+a, a:hover, a:focus, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+dl,dt,dd {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* clfix */
+.clfix:before,
+.clfix:after {
+  content: " ";
+  display: table;
+}
+
+.clfix:after,
+.clb {
+  clear: both;
+}
+
+.clfix {
+  *zoom: 1;
+}
+
+[v-clock] {
+  display: none;
+}
+
+/* 기본 여백 for문 */
+@for $i from 1 through 999 {
+  .px-#{$i} {
+    padding-left: 1px * $i;
+    padding-right: 1px * $i;
+  }
+  .py-#{$i} {
+    padding-top: 1px * $i;
+    padding-bottom: 1px * $i;
+  }
+  .pt-#{$i} {
+    padding-top: 1px * $i;
+  }
+  .pr-#{$i} {
+    padding-right: 1px * $i;
+  }
+  .pb-#{$i} {
+    padding-bottom: 1px * $i;
+  }
+  .pl-#{$i} {
+    padding-left: 1px * $i;
+  }
+
+  .mx-#{$i} {
+    margin-left: 1px * $i;
+    margin-right: 1px * $i;
+  }
+  .my-#{$i} {
+    margin-top: 1px * $i;
+    margin-bottom: 1px * $i;
+  }
+  .mt-#{$i} {
+    margin-top: 1px * $i;
+  }
+  .mr-#{$i} {
+    margin-right: 1px * $i;
+  }
+  .mb-#{$i} {
+    margin-bottom: 1px * $i;
+  }
+  .ml-#{$i} {
+    margin-left: 1px * $i;
+  }
+}
+
+.transition-fade-enter-active,
+.transition-fade-leave-active {
+  transition: opacity 200ms;
+}
+
+.transition-fade-enter,
+.transition-fade-leave-to {
+  opacity: 0;
+}
+
+a.link-text {
+  color: #2196f3;
+}
+
+
+/* Dialog */
+.body-scroll-hidden {
+  overflow: hidden;
+}
+
+.v-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+}
+
+.dialog-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+
+  .dialog {
+    display: flex;
+    flex-direction: column;
+    -webkit-transform: none;
+    transform: none;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    //-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+    &.is-align-center-x {
+      margin: 0 auto;
+    }
+
+    &.is-align-center-y {
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    &.is-fullscreen {
+      width: 100%;
+      height: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+      overflow: auto;
+    }
+  }
+}
+
+@import "./media";

@@ -1,0 +1,152 @@
+{
+  "list": [
+    {
+      "no": 1,
+      "thumbnail": "portfolio/portfolio-big-o-show.jpg",
+      "title": "빅오쇼",
+      "start_date": "2020.03",
+      "end_data": "2020.03",
+      "part": 100,
+      "type": ["markup", "design"],
+      "skill": ["html", "css", "jquery"],
+      "link": [
+        {
+          "link": "http://bbosongbbosong.com/big-o-show/page/"
+        }
+      ],
+      "state": "준비중"
+    },
+    {
+      "no": 2,
+      "thumbnail": "portfolio/portfolio-part-zipdoc.jpg",
+      "title": "집닥 부분 시공",
+      "start_date": "2020.01",
+      "end_data": "2020.03",
+      "part": 80,
+      "type": ["front-end", "markup"],
+      "skill": ["javascript", "nuxt.js", "vue.js"],
+      "link": [
+        {
+          "link": "https://part.zipdoc.co.kr/"
+        }
+      ],
+      "state": "오픈"
+    },
+    {
+      "no": 3,
+      "thumbnail": "portfolio/portfolio-yeosu.jpg",
+      "title": "여수해상케이블카",
+      "start_date": "2020.02",
+      "end_data": "2020.02",
+      "part": 100,
+      "type": ["markup", "design"],
+      "skill": ["html", "css", "jquery"],
+      "link": [
+        {
+          "link": "http://bbosongbbosong.com/yeosu/pages/"
+        }
+      ],
+      "state": "준비중"
+    },
+    {
+      "no": 4,
+      "thumbnail": "portfolio/portfolio-zipdoc.jpg",
+      "title": "집닥",
+      "start_date": "2019.04",
+      "end_data": "2020.04",
+      "part": 80,
+      "type": ["front-end", "markup"],
+      "skill": ["javascript", "jquery", "vue.js", "jsp"],
+      "link": [
+        {
+          "link": "https://zipdoc.co.kr/"
+        }
+      ],
+      "state": "유지보수"
+    },
+    {
+      "no": 5,
+      "thumbnail": "portfolio/portfolio-triphub.jpg",
+      "title": "트립허브",
+      "start_date": "2018.12",
+      "end_data": "2019.01",
+      "part": 100,
+      "type": ["markup", "design"],
+      "skill": ["javascript", "jquery", "jsp"],
+      "link": [
+        {
+          "link": "http://www.triphub.co.kr/"
+        }
+      ],
+      "state": "오픈"
+    },
+    {
+      "no": 6,
+      "thumbnail": "portfolio/portfolio-choice-1.jpg",
+      "title": "choice1",
+      "start_date": "2018.06",
+      "end_data": "2019.02",
+      "part": 80,
+      "type": ["front-end", "markup", "design"],
+      "skill": ["javascript", "jquery", "jsp"],
+      "link": [
+        {
+          "link": "https://www.choice1.co.kr"
+        },
+        {
+          "state": "QA",
+          "link": "http://dev.choice1.co.kr:2003:sample/choice/mobile/auth/page"
+        }
+      ],
+      "state": "오픈"
+    },
+    {
+      "no": 7,
+      "thumbnail": "portfolio/portfolio-choice-admin.jpg",
+      "title": "choice1 관리자 페이지",
+      "start_date": "2018.06",
+      "end_data": "2019.02",
+      "part": 40,
+      "type": ["front-end", "markup"],
+      "skill": ["javascript", "jquery", "jsp"],
+      "link": [
+        {
+          "link": "https://www.choice1.co.kr/admin/auth/login/page"
+        }
+      ],
+      "state": "오픈"
+    },
+    {
+      "no": 8,
+      "thumbnail": "portfolio/portfolio-aqua.jpg",
+      "title": "부천 아쿠아리움",
+      "start_date": "2018.12",
+      "end_data": "2018.12",
+      "part": 100,
+      "type": ["markup", "design"],
+      "skill": ["javascript", "jquery", "jsp"],
+      "link": [
+        {
+          "link": "http://bbosongbbosong.com/auqua/"
+        }
+      ],
+      "state": "소멸"
+    },
+    {
+      "no": 9,
+      "thumbnail": "portfolio/portfolio-stove.jpg",
+      "title": "Onstove 관리자 페이지",
+      "start_date": "2017.08",
+      "end_data": "2018.02",
+      "part": 20,
+      "type": ["frond-end"],
+      "skill": ["javascript", "jquery", "jsp"],
+      "link": [
+        {
+          "link": "http://partners.onstove.com"
+        }
+      ],
+      "state": "유지보수"
+    }
+  ]
+}

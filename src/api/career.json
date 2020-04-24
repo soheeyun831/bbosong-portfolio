@@ -1,0 +1,113 @@
+{
+  "list": [
+    {
+      "no": 1,
+      "thumbnail": "career/career-zipdoc.jpg",
+      "title": "집닥",
+      "start_date": "2017.08",
+      "end_date": "2018.02",
+      "total_date": "6개월",
+      "info": " 고객에게 가장 적합한 인테리어 업체를 연결해주고 공사의 마무리까지 책임 관리해주는 토탈 솔루션 서비스",
+      "business": {
+        "text": "퍼블리싱 / Front-End",
+        "detail": [
+          {
+            "text": "집닥 부분시공 개발",
+            "info": "원하는 시공에 대해 견적을 넣고 인테리어 정보를 공유하는 시스템",
+            "lang": "Nuxt.js, Vue.js",
+            "urls": [
+              {
+                "link": "https://part.zipdoc.co.kr"
+              }
+            ]
+          },
+          {
+            "text": "집닥 유지보수",
+            "info": "인테리어 견적을 넣고 인테리어 정보를 공유하는 시스템",
+            "lang": "Spring, jsp 기반에 vue.js 라이브러리 사용",
+            "urls": [
+              {
+                "link": "https://zipdoc.co.kr"
+              }
+            ]
+          }
+        ]
+      },
+      "resign": {
+        "status": false
+      }
+    },
+    {
+      "no": 2,
+      "thumbnail": "career/career-triphub.jpg",
+      "title": "트립허브",
+      "start_date": "2018.03",
+      "end_date": "2019.02",
+      "total_date": "1년",
+      "info": "여러가지 기프티콘(레저, 커피, 상품권 등)을 묶어 소비자가 그 중 하나를 택하여 이용할 수 있는 솔루션",
+      "business": {
+        "text": "시스템 설계 참여 / ERD 작성 / 퍼블리싱 / Front-End / 기본적인 api 개발(CRUD) / 전체적인 디자인 작업 / 기획서 및 제안서 작성",
+        "detail": [
+          {
+            "text": "Choice1 개발",
+            "lang": "Spring, jsp",
+            "urls": [
+              {
+                "link": "https://www.choice1.co.kr"
+              },
+              {
+                "link": "https://www.choice1.co.kr/admin/auth/login/page"
+              },
+              {
+                "state": "QA",
+                "link": "http://dev.choice1.co.kr:2003:sample/choice/mobile/auth/page"
+              }
+            ]
+          },
+          {
+            "text": "회사 홈페이지 제작",
+            "lang": "Spring, jsp",
+            "urls": [
+              {
+                "link": "http://www.triphub.co.kr/"
+              }
+            ]
+          }
+        ]
+      },
+      "resign": {
+        "status": true,
+        "reason": "직장내 성추행 및 성희롱"
+      }
+    },
+    {
+      "no": 3,
+      "thumbnail": "career/career-todos.jpg",
+      "title": "투도스",
+      "start_date": "2017.08",
+      "end_date": "2018.02",
+      "total_date": "6개월",
+      "info": "컨설팅부터, 기획, 디자인, 개발, 마케팅까지의 통합서비스를 제공",
+      "business": {
+        "text": "Front-End",
+        "detail": [
+          {
+            "text": "Onstove 관리자 페이지 개발 및 유지보수",
+            "urls": [
+              {
+                "link": "http://partnercenter.onstove.com"
+              },
+              {
+                "link": "http://partners.onstove.com"
+              }
+            ]
+          }
+        ]
+      },
+      "resign": {
+        "status": true,
+        "reason": "선임의 이직 제안을 받아 이직"
+      }
+    }
+  ]
+}
