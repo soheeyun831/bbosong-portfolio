@@ -16,7 +16,7 @@
     <div class="right">
       <ul class="clfix">
         <li class="git">
-          <a>
+          <a href="" target="_blank" aria-label="Github">
             <svg
               version="1.1"
               id="Capa_1"
@@ -30,7 +30,8 @@
               xml:space="preserve"
             >
               <g>
-                <path fill="#757474"
+                <path
+                  fill="#757474"
                   d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
 		c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
 		c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
@@ -56,10 +57,11 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="insta">
           <a
             href="https://www.instagram.com/bbosong_hee/"
             target="_blank"
+            aria-label="Instagram"
             @mouseover="instagram = true"
             @mouseleave="instagram = false"
           >
@@ -102,7 +104,7 @@
           </a>
         </li>
         <li class="kakao">
-          <a>
+          <a href="" target="_blank" aria-label="KakaoTalk">
             <svg
               id="Bold"
               enable-background="new 0 0 30 30"
@@ -231,8 +233,8 @@ export default {
             &:before,
             &:after {
               width: 50%;
-              -webkit-transition: all 0.2s ease;
-              transition: all 0.2s ease;
+              -webkit-transition: all 300ms ease;
+              transition: all 300ms ease;
             }
           }
         }
@@ -263,6 +265,7 @@ export default {
           width: 24px;
           height: 24px;
           display: block;
+          position: relative;
           cursor: pointer;
 
           svg {
@@ -270,23 +273,71 @@ export default {
               transition: all 300ms;
             }
           }
-        }
 
-        &.git:hover {
-          svg {
-            path {
-              fill: #E94E32;
-              transition: all 300ms;
-            }
+          &::before,
+          &::after {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -5px);
+            opacity: 0;
+            transition: 100ms;
+          }
+          &::before {
+            content: '';
+            bottom: -18px;
+            border: solid 5px transparent;
+          }
+          &::after {
+            content: attr(aria-label);
+            bottom: -50px;
+            padding: .5rem .75rem;
+            color: white;
+            font-size: .875rem;
+            border-radius: 3px;
+          }
+          &:hover::before,
+          &:hover::after {
+            opacity: 1;
           }
         }
-
-        &.kakao:hover {
-          svg {
-            path {
-              fill: #ffc723;
-              transition: all 300ms;
+        &.git{
+          a::before {
+            border-bottom-color: #e94e32;
+          }
+          &:hover {
+            svg {
+              path {
+                fill: #e94e32;
+                transition: all 300ms;
+              }
             }
+          }
+          a:hover::after {
+            background: #e94e32
+          }
+        }
+        &.insta{
+          a::before {
+            border-bottom-color: #df405a;
+          }
+          a:hover::after {
+            background: #df405a
+          }
+        }
+        &.kakao {
+          a::before {
+            border-bottom-color: #ffc723;
+          }
+          &:hover {
+            svg {
+              path {
+                fill: #ffc723;
+                transition: all 300ms;
+              }
+            }
+          }
+          a:hover::after {
+            background: #ffc723
           }
         }
       }

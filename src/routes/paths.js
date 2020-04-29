@@ -3,11 +3,10 @@ import Layout from "@/layout";
 export default [
   {
     path: "/",
-    name: "home",
     component: Layout,
     children: [
       {
-        name: "Main",
+        name: "main",
         path: "",
         component: () => import("../pages/index.vue")
       }
@@ -15,10 +14,10 @@ export default [
   },
   {
     path: "/contact",
-    name: "contact",
     component: Layout,
     children: [
       {
+        name: "contact",
         path: "",
         component: () => import("../pages/Contact/index.vue")
       }

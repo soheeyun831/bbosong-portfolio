@@ -52,6 +52,17 @@
   .common-side .hi {
     display: none;
   }
+
+  .contact-box {
+    display: block;
+    .contact-left {
+      display: none;
+    }
+
+    .contact-right {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 550px) {

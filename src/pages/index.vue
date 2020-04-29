@@ -103,7 +103,7 @@
     </div>
     <div class="container">
       <article
-        class="main-article"
+        class="main-article border-bottom"
         v-waypoint="{
           active: true,
           callback: faqWaypoint,
@@ -123,7 +123,7 @@
     </div>
     <div class="main-contact container">
       <article
-        class="main-article"
+        class="main-article main-contact"
         v-waypoint="{
           active: true,
           callback: contactWaypoint,
@@ -137,8 +137,113 @@
         >
           <div v-show="visible.contact">
             <h2 class="article-title">
-              CONTACT
+              CONTACT ME
             </h2>
+            <p class="main-sub-title">
+              안녕하세요. 저에게 관심이 생기신 분들은 아래 입력란에 작성 후
+              보내주시면 너무 너무 감사하겠습니다. :)
+            </p>
+            <div class="contact-box">
+              <div class="contact-left">
+                <img
+                  src="../assets/images/main-contacy-me.png"
+                  alt="연락주세요"
+                />
+              </div>
+              <div class="contact-right">
+                <div class="form-group">
+                  <dl class="form-item clfix">
+                    <dt class="form-title">
+                      기업명 <span class="compulsory">*</span>
+                    </dt>
+                    <dd class="form-control">
+                      <s-form>
+                        <s-input
+                          ref="company"
+                          v-model="formData.company"
+                          type="text"
+                          @input="test"
+                        ></s-input>
+                      </s-form>
+                    </dd>
+                  </dl>
+                  <dl class="form-item clfix">
+                    <dt class="form-title">
+                      성함 <span class="compulsory">*</span>
+                    </dt>
+                    <dd class="form-control">
+                      <s-form :rules="['blank']">
+                        <s-input
+                          ref="name"
+                          v-model="formData.name"
+                          type="text"
+                          @input="test"
+                        ></s-input>
+                      </s-form>
+                    </dd>
+                  </dl>
+                  <dl class="form-item clfix">
+                    <dt class="form-title">
+                      전화번호 <span class="compulsory">*</span>
+                    </dt>
+                    <dd class="form-control">
+                      <s-form :rules="['tel']">
+                        <s-input
+                          ref="tel"
+                          v-model="formData.tel"
+                          type="tel"
+                          @input="test"
+                        ></s-input>
+                      </s-form>
+                    </dd>
+                  </dl>
+                  <dl class="form-item clfix">
+                    <dt class="form-title">
+                      회사 주소 <span class="compulsory">*</span>
+                    </dt>
+                    <dd class="form-control address-form">
+                      <s-form :rules="['blank', 'tel']">
+                        <Address :value="address"></Address>
+                      </s-form>
+                    </dd>
+                  </dl>
+                  <dl class="form-item clfix">
+                    <dt class="form-title">
+                      이메일
+                    </dt>
+                    <dd class="form-control">
+                      <s-form :rules="['blank', 'email']">
+                        <s-input
+                          ref="email"
+                          v-model="formData.email"
+                          type="email"
+                          @input="test"
+                        ></s-input>
+                      </s-form>
+                    </dd>
+                  </dl>
+                  <dl class="form-item clfix">
+                    <dt class="form-title">
+                      추가 메시지
+                    </dt>
+                    <dd class="form-control">
+                      <s-form>
+                        <s-textarea
+                          ref="comment"
+                          v-model="formData.comment"
+                          type="text"
+                          rows="5"
+                          @input="test"
+                        ></s-textarea>
+                      </s-form>
+                    </dd>
+                  </dl>
+                  <div class="form-submit-btn">
+                    <s-button @click.prevent="contactSubmit">보내기</s-button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </transition>
       </article>
@@ -147,6 +252,8 @@
 </template>
 
 <script>
+import SButton from "../components/Element/Button/index";
+
 require("vue2-animate/dist/vue2-animate.min.css");
 import { mapGetters } from "vuex";
 import { VueTypedJs } from "vue-typed-js";
@@ -154,15 +261,19 @@ import Article from "../components/Article";
 import CardList from "../components/Card/List";
 import StatusBar from "../components/StatusBar";
 import ToggleMessage from "../components/ToggleMessage/List";
+import Address from "../components/Address";
+import "../plugins/element.js";
 
 export default {
   name: "index",
   components: {
+    SButton,
     Article,
     CardList,
     VueTypedJs,
     StatusBar,
-    ToggleMessage
+    ToggleMessage,
+    Address
   },
   computed: {
     ...mapGetters(["main"])
@@ -184,8 +295,39 @@ export default {
         portfolio: false,
         faq: false,
         contact: false
+      },
+      formData: {
+        company: "",
+        name: "",
+        tel: "",
+        email: "",
+        comment: "",
+        address: {
+          address: "",
+          sigungu_cd: "",
+          address_detail: "",
+          post_no: ""
+        }
+      },
+      address: {
+        address: "",
+        sigungu_cd: "",
+        address_detail: "",
+        post_no: ""
       }
     };
+  },
+  watch: {
+    address: {
+      deep: true,
+      immediate: true,
+      handler() {
+        this.formData.address.address = this.address.address;
+        this.formData.address.sigungu_cd = this.address.sigungu_cd;
+        this.formData.address.address_detail = this.address.address_detail;
+        this.formData.address.post_no = this.address.post_no;
+      }
+    },
   },
   methods: {
     introductionWaypoint({ going }) {
@@ -210,7 +352,8 @@ export default {
       if (going === "in") {
         this.visible[type] = true;
       }
-    }
+    },
+    test() {}
   }
 };
 </script>
@@ -231,6 +374,10 @@ export default {
       border-bottom: 1px solid #dddddd;
       padding-bottom: 70px;
     }
+
+    &.main-contact {
+      padding-bottom: 30px;
+    }
   }
 
   h2.article-title {
@@ -239,6 +386,13 @@ export default {
     text-align: center;
     line-height: 1;
     letter-spacing: -0.4px;
+  }
+
+  p.main-sub-title {
+    padding-bottom: 60px;
+    color: $gray-color;
+    font-size: 15px;
+    text-align: center;
   }
 
   .main-greeting {
