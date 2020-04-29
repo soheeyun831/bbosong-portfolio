@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrap">
     <Header />
     <SideLeft />
     <section class="app-wrap">

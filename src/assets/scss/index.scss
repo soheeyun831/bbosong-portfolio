@@ -92,6 +92,19 @@ html,
 body {
   color: $basic-color;
   width: 100%;
+  height: 100%;
+  #app {
+    width: 100%;
+    height: 100%;
+    > div.wrap {
+      width: 100%;
+      height: 100%;
+      .app-wrap {
+        min-height: calc(100% - 60px);
+        box-sizing: border-box;
+      }
+    }
+  }
 }
 
 a,
@@ -123,6 +136,10 @@ h5,
 h6,
 p {
   margin: 0;
+}
+// nprogress 색상 지정
+#nprogress .bar {
+  background: $primary-color;
 }
 
 /* clfix */

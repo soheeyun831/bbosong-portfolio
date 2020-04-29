@@ -9,6 +9,7 @@
 ```
 - sass-loader
 - node-sass
+- VueMomentJS
 - vue-waypoint
 - vue-typed-js
 - vue2-animate

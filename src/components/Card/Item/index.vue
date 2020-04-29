@@ -11,11 +11,9 @@
     <div class="card-text">
       {{ item.title }}
       <p>
-        <span class="date" v-if="item.resign">
-          {{ item.start_date }} ~
-          <span v-if="item.resign.status">{{ item.end_date }}</span>
+        <span class="date">
+          {{ setDate() }}
         </span>
-        <span v-else> {{ item.start_date }} ~ {{ item.end_data }} </span>
       </p>
     </div>
   </div>
@@ -28,6 +26,18 @@ export default {
     item: {
       type: Object,
       default: undefined
+    }
+  },
+  methods: {
+    setDate() {
+      let startDate = this.item.start_date
+        ? this.$moment(this.item.start_date).format("YYYY.MM")
+        : "";
+      let endDate = this.item.end_data
+        ? this.$moment(this.item.end_data).format("YYYY.MM")
+        : "";
+
+      return `${startDate} ~ ${endDate}`;
     }
   }
 };
@@ -128,6 +138,7 @@ export default {
       transition: opacity 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms,
         transform 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     }
+
     .card-text {
       &:after {
         background-color: #ffffff;
@@ -147,6 +158,7 @@ export default {
   .card {
     .card-text {
       font-size: 20px;
+
       p {
         span {
           font-size: 13px;
@@ -161,6 +173,7 @@ export default {
   .card {
     .card-text {
       font-size: 26px;
+
       p {
         span {
           font-size: 14px;
@@ -169,12 +182,13 @@ export default {
       }
     }
   }
-
 }
+
 @media (max-width: 550px) {
   .card {
     .card-text {
       font-size: 20px;
+
       p {
         span {
           font-size: 12px;

@@ -4,10 +4,10 @@
       "no": 1,
       "thumbnail": "portfolio/portfolio-big-o-show.jpg",
       "title": "빅오쇼",
-      "start_date": "2020.03",
-      "end_data": "2020.03",
+      "start_date": 1583040153000,
+      "end_data": 1583040153000,
       "part": 100,
-      "type": ["markup", "design"],
+      "type": ["front-end", "design"],
       "skill": ["html", "css", "jquery"],
       "link": [
         {
@@ -20,10 +20,10 @@
       "no": 2,
       "thumbnail": "portfolio/portfolio-part-zipdoc.jpg",
       "title": "집닥 부분 시공",
-      "start_date": "2020.01",
-      "end_data": "2020.03",
+      "start_date": 1577856153000,
+      "end_data": 1583040153000,
       "part": 80,
-      "type": ["front-end", "markup"],
+      "type": ["front-end"],
       "skill": ["javascript", "nuxt.js", "vue.js"],
       "link": [
         {
@@ -36,10 +36,10 @@
       "no": 3,
       "thumbnail": "portfolio/portfolio-yeosu.jpg",
       "title": "여수해상케이블카",
-      "start_date": "2020.02",
-      "end_data": "2020.02",
+      "start_date": 1580534553000,
+      "end_data": 1580534553000,
       "part": 100,
-      "type": ["markup", "design"],
+      "type": ["front-end", "design"],
       "skill": ["html", "css", "jquery"],
       "link": [
         {
@@ -52,10 +52,10 @@
       "no": 4,
       "thumbnail": "portfolio/portfolio-zipdoc.jpg",
       "title": "집닥",
-      "start_date": "2019.04",
-      "end_data": "2020.04",
+      "start_date": 1554096153000,
+      "end_data": null,
       "part": 80,
-      "type": ["front-end", "markup"],
+      "type": ["front-end"],
       "skill": ["javascript", "jquery", "vue.js", "jsp"],
       "link": [
         {
@@ -68,10 +68,10 @@
       "no": 5,
       "thumbnail": "portfolio/portfolio-triphub.jpg",
       "title": "트립허브",
-      "start_date": "2018.12",
-      "end_data": "2019.01",
+      "start_date": 1543641753000,
+      "end_data": 1546320153000,
       "part": 100,
-      "type": ["markup", "design"],
+      "type": ["front-end", "design"],
       "skill": ["javascript", "jquery", "jsp"],
       "link": [
         {
@@ -84,11 +84,12 @@
       "no": 6,
       "thumbnail": "portfolio/portfolio-choice-1.jpg",
       "title": "choice1",
-      "start_date": "2018.06",
-      "end_data": "2019.02",
+      "start_date": 1527830553000,
+      "end_data": 1548998553000,
       "part": 80,
-      "type": ["front-end", "markup", "design"],
+      "type": ["front-end", "design"],
       "skill": ["javascript", "jquery", "jsp"],
+      "memo" : "",
       "link": [
         {
           "link": "https://www.choice1.co.kr"
@@ -104,10 +105,11 @@
       "no": 7,
       "thumbnail": "portfolio/portfolio-choice-admin.jpg",
       "title": "choice1 관리자 페이지",
-      "start_date": "2018.06",
-      "end_data": "2019.02",
+      "start_date": 1527830553000,
+      "end_data": 1548998553000,
       "part": 40,
-      "type": ["front-end", "markup"],
+      "memo" : "spring boot mybatis 환경에서 restful api 로 작업(기본적인 curd)",
+      "type": ["front-end", "back-end"],
       "skill": ["javascript", "jquery", "jsp"],
       "link": [
         {
@@ -120,10 +122,10 @@
       "no": 8,
       "thumbnail": "portfolio/portfolio-aqua.jpg",
       "title": "부천 아쿠아리움",
-      "start_date": "2018.12",
-      "end_data": "2018.12",
+      "start_date": 1543641753000,
+      "end_data": 1543641753000,
       "part": 100,
-      "type": ["markup", "design"],
+      "type": ["front-end", "design"],
       "skill": ["javascript", "jquery", "jsp"],
       "link": [
         {
@@ -136,10 +138,10 @@
       "no": 9,
       "thumbnail": "portfolio/portfolio-stove.jpg",
       "title": "Onstove 관리자 페이지",
-      "start_date": "2017.08",
-      "end_data": "2018.02",
+      "start_date": 1501564953000,
+      "end_data": 1517462553000,
       "part": 20,
-      "type": ["frond-end"],
+      "type": ["front-end"],
       "skill": ["javascript", "jquery", "jsp"],
       "link": [
         {
