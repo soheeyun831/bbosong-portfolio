@@ -6,20 +6,24 @@
         총 경력
         {{ setCareerDate() }}
       </PageHeader>
-      <cardList :card-list="careerList"></cardList>
+      <CardList>
+        <CardItem v-for="item in careerList" :key="item.no" :item="item" :link="'careerDetail'"></CardItem>
+      </CardList>
     </div>
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
-import cardList from "../../../components/Card/List";
+import CardList from "../../../components/Card/List";
+import CardItem from "../../../components/Card/Item";
 import PageHeader from "../../../components/PageHeader";
 
 export default {
   name: "index",
   components: {
-    cardList,
+    CardList,
+    CardItem,
     PageHeader
   },
   computed: {

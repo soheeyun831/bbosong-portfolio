@@ -12,7 +12,9 @@
         >
       </PageHeader>
       <transition name="slide-fade" mode="out-in" @after-leave="setList">
-        <cardList :card-list="portfolioList" v-show="isList"></cardList>
+        <CardList v-show="isList">
+          <CardItem v-for="item in portfolioList" :key="item.no" :item="item" :link="'portfolioDetail'"></CardItem>
+        </CardList>
       </transition>
     </div>
   </div>
@@ -20,13 +22,15 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import cardList from "../../../components/Card/List";
+import CardList from "../../../components/Card/List";
+import CardItem from "../../../components/Card/Item";
 import PageHeader from "../../../components/PageHeader";
 
 export default {
   name: "index",
   components: {
-    cardList,
+    CardList,
+    CardItem,
     PageHeader
   },
   computed: {

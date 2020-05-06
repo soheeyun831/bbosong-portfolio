@@ -9,6 +9,7 @@
       "part": 100,
       "type": ["front-end", "design"],
       "skill": ["html", "css", "jquery"],
+      "career_no" : null,
       "link": [
         {
           "link": "http://bbosongbbosong.com/big-o-show/page/"
@@ -25,6 +26,7 @@
       "part": 80,
       "type": ["front-end"],
       "skill": ["javascript", "nuxt.js", "vue.js"],
+      "career_no" : 1,
       "link": [
         {
           "link": "https://part.zipdoc.co.kr/"
@@ -41,6 +43,7 @@
       "part": 100,
       "type": ["front-end", "design"],
       "skill": ["html", "css", "jquery"],
+      "career_no" : null,
       "link": [
         {
           "link": "http://bbosongbbosong.com/yeosu/pages/"
@@ -57,6 +60,7 @@
       "part": 80,
       "type": ["front-end"],
       "skill": ["javascript", "jquery", "vue.js", "jsp"],
+      "career_no" : 1,
       "link": [
         {
           "link": "https://zipdoc.co.kr/"
@@ -73,6 +77,7 @@
       "part": 100,
       "type": ["front-end", "design"],
       "skill": ["javascript", "jquery", "jsp"],
+      "career_no" : 2,
       "link": [
         {
           "link": "http://www.triphub.co.kr/"
@@ -89,6 +94,7 @@
       "part": 80,
       "type": ["front-end", "design"],
       "skill": ["javascript", "jquery", "jsp"],
+      "career_no" : 2,
       "memo" : "",
       "link": [
         {
@@ -111,6 +117,7 @@
       "memo" : "spring boot mybatis 환경에서 restful api 로 작업(기본적인 curd)",
       "type": ["front-end", "back-end"],
       "skill": ["javascript", "jquery", "jsp"],
+      "career_no" : 2,
       "link": [
         {
           "link": "https://www.choice1.co.kr/admin/auth/login/page"
@@ -127,6 +134,7 @@
       "part": 100,
       "type": ["front-end", "design"],
       "skill": ["javascript", "jquery", "jsp"],
+      "career_no" : null,
       "link": [
         {
           "link": "http://bbosongbbosong.com/auqua/"
@@ -143,6 +151,7 @@
       "part": 20,
       "type": ["front-end"],
       "skill": ["javascript", "jquery", "jsp"],
+      "career_no" : 3,
       "link": [
         {
           "link": "http://partners.onstove.com"

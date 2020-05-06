@@ -47,7 +47,9 @@
             <h2 class="article-title">
               경력
             </h2>
-            <CardList :card-list="main.career"></CardList>
+            <CardList>
+              <CardItem v-for="item in main.career" :key="item.no" :item="item" :link="'careerDetail'"></CardItem>
+            </CardList>
           </div>
         </transition>
       </article>
@@ -96,7 +98,9 @@
             <h2 class="article-title">
               PORTFOLIO
             </h2>
-            <CardList :card-list="main.portfolio"></CardList>
+            <CardList>
+              <CardItem v-for="item in main.portfolio" :key="item.no" :item="item" :link="'portfolioDetail'"></CardItem>
+            </CardList>
           </div>
         </transition>
       </article>
@@ -259,6 +263,7 @@ import { mapGetters } from "vuex";
 import { VueTypedJs } from "vue-typed-js";
 import Article from "../components/Article";
 import CardList from "../components/Card/List";
+import CardItem from "../components/Card/Item";
 import StatusBar from "../components/StatusBar";
 import ToggleMessage from "../components/ToggleMessage/List";
 import Address from "../components/Address";
@@ -270,6 +275,7 @@ export default {
     SButton,
     Article,
     CardList,
+    CardItem,
     VueTypedJs,
     StatusBar,
     ToggleMessage,

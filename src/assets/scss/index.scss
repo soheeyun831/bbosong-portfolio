@@ -331,4 +331,55 @@ a.link-text {
   }
 }
 
+
+h2.article-title {
+  padding-bottom: 30px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -0.4px;
+}
+
+.info-description-item {
+  width: 100%;
+
+  .info-description-title {
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .info-description-description {
+    width: calc(100% - 90px);
+    float: left;
+
+    ul {
+      li {
+        width: 100%;
+        margin: 12px 0;
+
+        span {
+          width: 100%;
+          display: block;
+          position: relative;
+          padding-left: 14px;
+
+          a {
+            width: 100%;
+            display: block;
+            color: #6b60e5;
+            cursor: pointer;
+          }
+
+          &:before {
+            content: '-';
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 @import "./media";
