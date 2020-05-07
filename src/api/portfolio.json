@@ -7,12 +7,22 @@
       "start_date": 1583040153000,
       "end_data": 1583040153000,
       "part": 100,
-      "type": ["front-end", "design"],
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 80
+        },
+        {
+          "type_nm": "design",
+          "part": 100
+        }
+      ],
       "skill": ["html", "css", "jquery"],
-      "career_no" : null,
+      "career_no": null,
+      "memo": null,
       "link": [
         {
-          "link": "http://bbosongbbosong.com/big-o-show/page/"
+          "url": "http://bbosongbbosong.com/big-o-show/page/"
         }
       ],
       "state": "준비중"
@@ -24,12 +34,18 @@
       "start_date": 1577856153000,
       "end_data": 1583040153000,
       "part": 80,
-      "type": ["front-end"],
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 80
+        }
+      ],
       "skill": ["javascript", "nuxt.js", "vue.js"],
-      "career_no" : 1,
+      "career_no": 1,
+      "memo": null,
       "link": [
         {
-          "link": "https://part.zipdoc.co.kr/"
+          "url": "https://part.zipdoc.co.kr/"
         }
       ],
       "state": "오픈"
@@ -41,12 +57,22 @@
       "start_date": 1580534553000,
       "end_data": 1580534553000,
       "part": 100,
-      "type": ["front-end", "design"],
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 80
+        },
+        {
+          "type_nm": "design",
+          "part": 100
+        }
+      ],
       "skill": ["html", "css", "jquery"],
-      "career_no" : null,
+      "career_no": null,
+      "memo": null,
       "link": [
         {
-          "link": "http://bbosongbbosong.com/yeosu/pages/"
+          "url": "http://bbosongbbosong.com/yeosu/pages/"
         }
       ],
       "state": "준비중"
@@ -58,12 +84,18 @@
       "start_date": 1554096153000,
       "end_data": null,
       "part": 80,
-      "type": ["front-end"],
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 80
+        }
+      ],
       "skill": ["javascript", "jquery", "vue.js", "jsp"],
-      "career_no" : 1,
+      "career_no": 1,
+      "memo": null,
       "link": [
         {
-          "link": "https://zipdoc.co.kr/"
+          "url": "https://zipdoc.co.kr/"
         }
       ],
       "state": "유지보수"
@@ -75,12 +107,22 @@
       "start_date": 1543641753000,
       "end_data": 1546320153000,
       "part": 100,
-      "type": ["front-end", "design"],
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 80
+        },
+        {
+          "type_nm": "design",
+          "part": 100
+        }
+      ],
       "skill": ["javascript", "jquery", "jsp"],
-      "career_no" : 2,
+      "career_no": 2,
+      "memo": null,
       "link": [
         {
-          "link": "http://www.triphub.co.kr/"
+          "url": "http://www.triphub.co.kr/"
         }
       ],
       "state": "오픈"
@@ -92,17 +134,26 @@
       "start_date": 1527830553000,
       "end_data": 1548998553000,
       "part": 80,
-      "type": ["front-end", "design"],
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 80
+        },
+        {
+          "type_nm": "design",
+          "part": 100
+        }
+      ],
       "skill": ["javascript", "jquery", "jsp"],
-      "career_no" : 2,
-      "memo" : "",
+      "career_no": 2,
+      "memo": null,
       "link": [
         {
-          "link": "https://www.choice1.co.kr"
+          "url": "https://www.choice1.co.kr"
         },
         {
           "state": "QA",
-          "link": "http://dev.choice1.co.kr:2003:sample/choice/mobile/auth/page"
+          "url": "http://dev.choice1.co.kr:2003/sample/choice/mobile/auth/page"
         }
       ],
       "state": "오픈"
@@ -114,13 +165,22 @@
       "start_date": 1527830553000,
       "end_data": 1548998553000,
       "part": 40,
-      "memo" : "spring boot mybatis 환경에서 restful api 로 작업(기본적인 curd)",
-      "type": ["front-end", "back-end"],
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 80
+        },
+        {
+          "type_nm": "back-end",
+          "part": 100
+        }
+      ],
       "skill": ["javascript", "jquery", "jsp"],
-      "career_no" : 2,
+      "career_no": 2,
+      "memo": "spring boot mybatis 환경에서 restful api 로 작업(기본적인 curd)",
       "link": [
         {
-          "link": "https://www.choice1.co.kr/admin/auth/login/page"
+          "url": "https://www.choice1.co.kr/admin/auth/login/page"
         }
       ],
       "state": "오픈"
@@ -132,12 +192,22 @@
       "start_date": 1543641753000,
       "end_data": 1543641753000,
       "part": 100,
-      "type": ["front-end", "design"],
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 80
+        },
+        {
+          "type_nm": "design",
+          "part": 100
+        }
+      ],
       "skill": ["javascript", "jquery", "jsp"],
-      "career_no" : null,
+      "career_no": null,
+      "memo": null,
       "link": [
         {
-          "link": "http://bbosongbbosong.com/auqua/"
+          "url": "http://bbosongbbosong.com/auqua/"
         }
       ],
       "state": "소멸"
@@ -149,12 +219,18 @@
       "start_date": 1501564953000,
       "end_data": 1517462553000,
       "part": 20,
-      "type": ["front-end"],
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 80
+        }
+      ],
       "skill": ["javascript", "jquery", "jsp"],
-      "career_no" : 3,
+      "career_no": 3,
+      "memo": null,
       "link": [
         {
-          "link": "http://partners.onstove.com"
+          "url": "http://partners.onstove.com"
         }
       ],
       "state": "유지보수"

@@ -22,9 +22,13 @@ const mutations = {
       state.portfolioList = state.portfolio;
     } else {
       state.portfolioList = state.portfolio.reduce((pre, obj) => {
-        if (obj.type.includes(v)) {
-          pre.push(obj);
-        }
+        console.log(obj);
+
+        obj.type.forEach(t => {
+          if (t.type_nm === v) {
+            pre.push(obj);
+          }
+        });
         return pre;
       }, []);
     }

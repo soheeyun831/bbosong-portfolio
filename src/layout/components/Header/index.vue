@@ -121,18 +121,69 @@
             </svg>
           </a>
         </li>
+        <li class="hamburger">
+          <div @click="sidePanelVisible = true">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 28 28"
+              style="enable-background:new 0 0 28 28;"
+              xml:space="preserve"
+            >
+              <circle
+                class="circle"
+                style="fill:#757474;"
+                cx="14"
+                cy="14"
+                r="14"
+              />
+              <line
+                style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;"
+                x1="8"
+                y1="8"
+                x2="20"
+                y2="8"
+              />
+              <line
+                style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;"
+                x1="8"
+                y1="14"
+                x2="20"
+                y2="14"
+              />
+              <line
+                style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;"
+                x1="8"
+                y1="20"
+                x2="20"
+                y2="20"
+              />
+            </svg>
+          </div>
+        </li>
       </ul>
     </div>
+    <sidePanel :visible.sync="sidePanelVisible"></sidePanel>
   </header>
 </template>
 
 <script>
+import sidePanel from "../Side/panel";
+
 export default {
   name: "index",
+  components: {
+    sidePanel
+  },
   data() {
     return {
       instagram: false,
-      headerActive: false
+      headerActive: false,
+      sidePanelVisible: false
     };
   },
   mounted() {
@@ -252,14 +303,11 @@ export default {
 
     ul {
       li {
-        width: 24px;
-        height: 24px;
+        width: 28px;
+        height: 28px;
         margin-right: 10px;
         float: left;
-
-        &:last-child {
-          margin-right: 0;
-        }
+        overflow: hidden;
 
         a {
           width: 24px;
@@ -282,28 +330,33 @@ export default {
             opacity: 0;
             transition: 100ms;
           }
+
           &::before {
-            content: '';
+            content: "";
             bottom: -18px;
             border: solid 5px transparent;
           }
+
           &::after {
             content: attr(aria-label);
             bottom: -50px;
-            padding: .5rem .75rem;
+            padding: 0.5rem 0.75rem;
             color: white;
-            font-size: .875rem;
+            font-size: 0.875rem;
             border-radius: 3px;
           }
+
           &:hover::before,
           &:hover::after {
             opacity: 1;
           }
         }
-        &.git{
+
+        &.git {
           a::before {
             border-bottom-color: #e94e32;
           }
+
           &:hover {
             svg {
               path {
@@ -312,22 +365,29 @@ export default {
               }
             }
           }
+
           a:hover::after {
-            background: #e94e32
+            background: #e94e32;
           }
         }
-        &.insta{
+
+        &.insta {
           a::before {
             border-bottom-color: #df405a;
           }
+
           a:hover::after {
-            background: #df405a
+            background: #df405a;
           }
         }
+
         &.kakao {
+          margin-right: 0;
+
           a::before {
             border-bottom-color: #ffc723;
           }
+
           &:hover {
             svg {
               path {
@@ -336,9 +396,36 @@ export default {
               }
             }
           }
+
           a:hover::after {
-            background: #ffc723
+            background: #ffc723;
           }
+        }
+
+        &.hamburger {
+          display: none;
+          margin-right: 0;
+
+          > div {
+            width: 24px;
+            height: 24px;
+            display: block;
+            position: relative;
+            cursor: pointer;
+          }
+
+          &:hover {
+            svg {
+              .circle {
+                fill: #df405a !important;
+                transition: all 300ms;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          overflow: visible;
         }
       }
     }
@@ -394,16 +481,34 @@ export default {
     height: 90px;
     padding: {
       top: 0;
-      left: 10vw;
-      right: 10vw;
+      left: 8vw;
+      right: 8vw;
+    }
+
+    .left {
+      display: none;
+    }
+
+    .right {
+      padding-top: 30px;
     }
   }
 }
 
 @media (max-width: 760px) {
   .header {
-    .left {
-      display: none;
+    .right {
+      ul {
+        li {
+          &.kakao {
+            margin-right: 10px;
+          }
+
+          &.hamburger {
+            display: block;
+          }
+        }
+      }
     }
   }
 }

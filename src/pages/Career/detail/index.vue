@@ -26,6 +26,7 @@
                   {{item.info}}
                   <span>개발언어 : {{item.lang}}</span>
                   <span>링크 :
+                    <!-- eslint-disable vue/no-use-v-if-with-v-for,vue/no-confusing-v-for-v-if -->
                     <a v-if="item.urls && item.urls.length > 0" v-for="(url, index) in item.urls" :key="`url-${index}`">{{url.link}}</a>
                   </span>
                 </li>
@@ -52,7 +53,6 @@
         <h2 class="article-title">
           PORTFOLIO
         </h2>
-        {{careerData.portfolio}}
         <CardList>
           <CardItem v-for="item in careerData.portfolio" :key="item.no" :item="item" :link="'portfolioDetail'"></CardItem>
         </CardList>

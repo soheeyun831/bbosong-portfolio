@@ -44,6 +44,7 @@
 				color: #191919;
 				font-size: 16px;
 				line-height: 1.63;
+				word-break: break-all;
 			}
 		}
 	}
