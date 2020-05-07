@@ -104,7 +104,7 @@
           </a>
         </li>
         <li class="kakao">
-          <a href="" target="_blank" aria-label="KakaoTalk">
+          <a href="https://open.kakao.com/o/sxEbGCac" target="_blank" aria-label="KakaoTalk">
             <svg
               id="Bold"
               enable-background="new 0 0 30 30"
