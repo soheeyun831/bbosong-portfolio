@@ -6,11 +6,10 @@
       "title": "빅오쇼",
       "start_date": 1583040153000,
       "end_data": 1583040153000,
-      "part": 100,
       "type": [
         {
           "type_nm": "front-end",
-          "part": 80
+          "part": 100
         },
         {
           "type_nm": "design",
@@ -22,10 +21,10 @@
       "memo": null,
       "link": [
         {
+          "state": "준비중/임시URL",
           "url": "http://bbosongbbosong.com/big-o-show/page/"
         }
-      ],
-      "state": "준비중"
+      ]
     },
     {
       "no": 2,
@@ -33,11 +32,10 @@
       "title": "집닥 부분 시공",
       "start_date": 1577856153000,
       "end_data": 1583040153000,
-      "part": 80,
       "type": [
         {
           "type_nm": "front-end",
-          "part": 80
+          "part": 70
         }
       ],
       "skill": ["javascript", "nuxt.js", "vue.js"],
@@ -47,8 +45,7 @@
         {
           "url": "https://part.zipdoc.co.kr/"
         }
-      ],
-      "state": "오픈"
+      ]
     },
     {
       "no": 3,
@@ -56,11 +53,10 @@
       "title": "여수해상케이블카",
       "start_date": 1580534553000,
       "end_data": 1580534553000,
-      "part": 100,
       "type": [
         {
           "type_nm": "front-end",
-          "part": 80
+          "part": 100
         },
         {
           "type_nm": "design",
@@ -72,10 +68,10 @@
       "memo": null,
       "link": [
         {
+          "state": "준비중/임시URL",
           "url": "http://bbosongbbosong.com/yeosu/pages/"
         }
-      ],
-      "state": "준비중"
+      ]
     },
     {
       "no": 4,
@@ -83,7 +79,6 @@
       "title": "집닥",
       "start_date": 1554096153000,
       "end_data": null,
-      "part": 80,
       "type": [
         {
           "type_nm": "front-end",
@@ -95,10 +90,10 @@
       "memo": null,
       "link": [
         {
-          "url": "https://zipdoc.co.kr/"
+          "url": "https://zipdoc.co.kr/",
+          "state": "유지보수"
         }
-      ],
-      "state": "유지보수"
+      ]
     },
     {
       "no": 5,
@@ -106,11 +101,10 @@
       "title": "트립허브",
       "start_date": 1543641753000,
       "end_data": 1546320153000,
-      "part": 100,
       "type": [
         {
           "type_nm": "front-end",
-          "part": 80
+          "part": 100
         },
         {
           "type_nm": "design",
@@ -124,8 +118,7 @@
         {
           "url": "http://www.triphub.co.kr/"
         }
-      ],
-      "state": "오픈"
+      ]
     },
     {
       "no": 6,
@@ -133,7 +126,6 @@
       "title": "choice1",
       "start_date": 1527830553000,
       "end_data": 1548998553000,
-      "part": 80,
       "type": [
         {
           "type_nm": "front-end",
@@ -149,14 +141,14 @@
       "memo": null,
       "link": [
         {
-          "url": "https://www.choice1.co.kr"
+          "state": "DEV",
+          "url": "http://dev.choice1.co.kr:2003/sample/choice/mobile/auth/page"
         },
         {
-          "state": "QA",
-          "url": "http://dev.choice1.co.kr:2003/sample/choice/mobile/auth/page"
+          "state": "LIVE",
+          "url": "https://www.choice1.co.kr"
         }
-      ],
-      "state": "오픈"
+      ]
     },
     {
       "no": 7,
@@ -164,11 +156,10 @@
       "title": "choice1 관리자 페이지",
       "start_date": 1527830553000,
       "end_data": 1548998553000,
-      "part": 40,
       "type": [
         {
           "type_nm": "front-end",
-          "part": 80
+          "part": 40
         },
         {
           "type_nm": "back-end",
@@ -182,8 +173,7 @@
         {
           "url": "https://www.choice1.co.kr/admin/auth/login/page"
         }
-      ],
-      "state": "오픈"
+      ]
     },
     {
       "no": 8,
@@ -191,11 +181,10 @@
       "title": "부천 아쿠아리움",
       "start_date": 1543641753000,
       "end_data": 1543641753000,
-      "part": 100,
       "type": [
         {
           "type_nm": "front-end",
-          "part": 80
+          "part": 100
         },
         {
           "type_nm": "design",
@@ -207,10 +196,10 @@
       "memo": null,
       "link": [
         {
+          "state": "임시URL",
           "url": "http://bbosongbbosong.com/auqua/"
         }
-      ],
-      "state": "소멸"
+      ]
     },
     {
       "no": 9,
@@ -218,11 +207,10 @@
       "title": "Onstove 관리자 페이지",
       "start_date": 1501564953000,
       "end_data": 1517462553000,
-      "part": 20,
       "type": [
         {
           "type_nm": "front-end",
-          "part": 80
+          "part": 20
         }
       ],
       "skill": ["javascript", "jquery", "jsp"],
@@ -230,10 +218,10 @@
       "memo": null,
       "link": [
         {
+          "state": "유지보수",
           "url": "http://partners.onstove.com"
         }
-      ],
-      "state": "유지보수"
+      ]
     }
   ]
 }

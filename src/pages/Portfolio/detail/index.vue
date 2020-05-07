@@ -48,20 +48,14 @@
               링크
             </dt>
             <dd class="info-description-description">
-              <a
+              <span
                 class="block"
                 v-for="(item, index) in portfolioData.link"
                 :key="`url-${index}`"
-                >{{ item.url }}</a
               >
-            </dd>
-          </dl>
-          <dl class="info-description-item clfix">
-            <dt class="info-description-title">
-              상용 여부
-            </dt>
-            <dd class="info-description-description">
-              {{ portfolioData.state }}
+                <a :href="item.url" target="_blank">{{ item.url }}</a>
+                {{ item.state ? `(${item.state})` : "" }}
+              </span>
             </dd>
           </dl>
           <dl class="info-description-item clfix" v-if="portfolioData.memo">
@@ -76,13 +70,11 @@
       </article>
       <article v-if="portfolioData.link.length > 0">
         <Article title="view">
-          <div
+          <iframe
             class="portfolio-view"
-            v-for="(link, ind) in portfolioData.link"
-            :key="`url-${ind}`"
-          >
-            <iframe title="Inline Frame Example" :src="link.url"></iframe>
-          </div>
+            title="Inline Frame Example"
+            :src="portfolioData.link[0].url"
+          ></iframe>
         </Article>
       </article>
     </div>
@@ -129,17 +121,9 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio-view {
-  padding-bottom: 30px;
-
-  iframe {
-    width: 100%;
-    min-height: 500px;
-    border: 1px solid #dddddd;
-    border-radius: 6px;
-  }
-
-  &:last-child {
-    padding-bottom: 0;
-  }
+  width: 100%;
+  min-height: 500px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
 }
 </style>

@@ -386,13 +386,22 @@ h2.article-title {
             position: absolute;
             left: 0;
           }
+          > span.link {
+            width: auto;
+            display: inline-block;
+            padding-left: 0;
+            word-break: break-all;
+            &:before {
+              content: "";
+            }
+            &:nth-child(n+2) {
+              width: 100%;
+            }
+          }
         }
       }
     }
-
     a {
-      width: 100%;
-      display: block;
       color: #6b60e5;
       cursor: pointer;
     }

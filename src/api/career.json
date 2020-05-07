@@ -15,9 +15,9 @@
             "text": "집닥 부분시공 개발",
             "info": "원하는 시공에 대해 견적을 넣고 인테리어 정보를 공유하는 시스템",
             "lang": "Nuxt.js, Vue.js",
-            "urls": [
+            "link": [
               {
-                "link": "https://part.zipdoc.co.kr"
+                "url": "https://part.zipdoc.co.kr"
               }
             ]
           },
@@ -25,9 +25,9 @@
             "text": "집닥 유지보수",
             "info": "인테리어 견적을 넣고 인테리어 정보를 공유하는 시스템",
             "lang": "Spring, jsp 기반에 vue.js 라이브러리 사용",
-            "urls": [
+            "link": [
               {
-                "link": "https://zipdoc.co.kr"
+                "url": "https://zipdoc.co.kr"
               }
             ]
           }
@@ -51,25 +51,27 @@
           {
             "text": "Choice1 개발",
             "lang": "Spring, jsp",
-            "urls": [
+            "link": [
               {
-                "link": "https://www.choice1.co.kr"
+                "state": "LIVE",
+                "url": "https://www.choice1.co.kr"
               },
               {
-                "link": "https://www.choice1.co.kr/admin/auth/login/page"
+                "state": "ADMIN",
+                "url": "https://www.choice1.co.kr/admin/auth/login/page"
               },
               {
-                "state": "QA",
-                "link": "http://dev.choice1.co.kr:2003:sample/choice/mobile/auth/page"
+                "state": "DEV",
+                "url": "http://dev.choice1.co.kr:2003:sample/choice/mobile/auth/page"
               }
             ]
           },
           {
             "text": "회사 홈페이지 제작",
             "lang": "Spring, jsp",
-            "urls": [
+            "link": [
               {
-                "link": "http://www.triphub.co.kr/"
+                "url": "http://www.triphub.co.kr/"
               }
             ]
           }
@@ -93,12 +95,12 @@
         "detail": [
           {
             "text": "Onstove 관리자 페이지 개발 및 유지보수",
-            "urls": [
+            "link": [
               {
-                "link": "http://partnercenter.onstove.com"
+                "url": "http://partnercenter.onstove.com"
               },
               {
-                "link": "http://partners.onstove.com"
+                "url": "http://partners.onstove.com"
               }
             ]
           }
