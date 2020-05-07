@@ -48,7 +48,12 @@
               경력
             </h2>
             <CardList>
-              <CardItem v-for="item in main.career" :key="item.no" :item="item" :link="'careerDetail'"></CardItem>
+              <CardItem
+                v-for="item in main.career"
+                :key="item.no"
+                :item="item"
+                :link="'careerDetail'"
+              ></CardItem>
             </CardList>
           </div>
         </transition>
@@ -96,10 +101,22 @@
         >
           <div v-show="visible.portfolio">
             <h2 class="article-title">
-              PORTFOLIO
+              <router-link to="/portfolio">
+                PORTFOLIO
+                <span class="more"
+                  ><img
+                    src="../assets/images/control/arrow-small-next.png"
+                    alt="더보기"
+                /></span>
+              </router-link>
             </h2>
             <CardList>
-              <CardItem v-for="item in main.portfolio" :key="item.no" :item="item" :link="'portfolioDetail'"></CardItem>
+              <CardItem
+                v-for="item in main.portfolio.slice(0,6)"
+                :key="item.no"
+                :item="item"
+                :link="'portfolioDetail'"
+              ></CardItem>
             </CardList>
           </div>
         </transition>
@@ -333,7 +350,7 @@ export default {
         this.formData.address.address_detail = this.address.address_detail;
         this.formData.address.post_no = this.address.post_no;
       }
-    },
+    }
   },
   methods: {
     introductionWaypoint({ going }) {
@@ -387,11 +404,31 @@ export default {
   }
 
   h2.article-title {
+    position: relative;
     padding-bottom: 30px;
     font-size: 28px;
     text-align: center;
-    line-height: 1;
+    line-height: 28px;
     letter-spacing: -0.4px;
+    .more {
+      position: absolute;
+      right: 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      img {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        padding-left: 4px;
+        line-height: 28px;
+        vertical-align: middle;
+      }
+
+      &:before {
+        content: "더보기";
+      }
+    }
   }
 
   p.main-sub-title {
@@ -502,6 +539,20 @@ export default {
 
     .main-greeting .typed-element h1 {
       font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .main-page-wrap {
+    h2.article-title {
+      .more {
+        right: auto;
+        margin-top: -2px;
+        &:before {
+          content: "";
+        }
+      }
     }
   }
 }
