@@ -22,17 +22,17 @@
         </div>
         <div class="mobile-side-menu">
           <ul class="menu-list">
-            <li class="home" @click="handleClose">
-              <router-link to="/">Main</router-link>
+            <li @click="handleClose">
+              <router-link class="home" to="/">Main</router-link>
             </li>
-            <li class="career" @click="handleClose">
-              <router-link to="/career">Career</router-link>
+            <li @click="handleClose">
+              <router-link class="career" to="/career">Career</router-link>
             </li>
-            <li class="portfolio" @click="handleClose">
-              <router-link to="/portfolio">Portfolio</router-link>
+            <li @click="handleClose">
+              <router-link class="portfolio" to="/portfolio">Portfolio</router-link>
             </li>
-            <li class="contact" @click="handleClose">
-              <router-link to="/contact">Contact me</router-link>
+            <li @click="handleClose">
+              <router-link class="contact" to="/contact">Contact me</router-link>
             </li>
           </ul>
         </div>
@@ -131,36 +131,36 @@ export default {
         li {
           width: 100%;
           height: 54px;
-          padding-left: 34px;
-          line-height: 54px;
-          box-sizing: border-box;
-
-          &.home {
-            background-image: url(../../../../assets/images/common/next-black.png),
+          a {
+            width: 100%;
+            height: 54px;
+            display: block;
+            padding-left: 34px;
+            line-height: 54px;
+            box-sizing: border-box;
+            &.home {
+              background-image: url(../../../../assets/images/common/next-black.png),
               url(../../../../assets/images/common/side-home.png);
-            @include list-bg;
-          }
+              @include list-bg;
+            }
 
-          &.career {
-            background-image: url(../../../../assets/images/common/next-black.png),
+            &.career {
+              background-image: url(../../../../assets/images/common/next-black.png),
               url(../../../../assets/images/common/side-career.png);
-            @include list-bg;
-          }
+              @include list-bg;
+            }
 
-          &.portfolio {
-            background-image: url(../../../../assets/images/common/next-black.png),
+            &.portfolio {
+              background-image: url(../../../../assets/images/common/next-black.png),
               url(../../../../assets/images/common/side-portfolio.png);
-            @include list-bg;
-          }
+              @include list-bg;
+            }
 
-          &.contact {
-            background-image: url(../../../../assets/images/common/next-black.png),
+            &.contact {
+              background-image: url(../../../../assets/images/common/next-black.png),
               url(../../../../assets/images/common/side-contact.png);
-            @include list-bg;
-          }
-
-          &:last-child {
-            margin-bottom: 0;
+              @include list-bg;
+            }
           }
         }
       }
