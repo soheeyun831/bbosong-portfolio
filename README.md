@@ -3,6 +3,22 @@
 
 ```
 안녕하세요.
+곧 3년차가 되는 Web front-end developer 윤소희입니다.
+```
+
+### 아직 되지 않은.. TODO LIST
+```
+※ 작업이 되는 대로 하나하나 지울 것입니다.
+- Error.page
+- Contact.page
+- Form component
+- 이력서&포트폴리오 pdf 다운로드 기능
+- 메일 보내기 기능
+- Scroll top button
+- Card component style 수정
+- 자기소개
+- FAQ 내용 수정
+- kepp-alive 고려
 ```
 
 ### 사용한 플러그인
@@ -17,7 +33,7 @@
 - intersection-observer (IE11지원을 위해..)
 ```
 
-### Demo?
+### portfolio site (demo?)
 ```
-http://bbosongbbosong.com/
+http://bbosongbbosong.com/#/
 ```
