@@ -167,6 +167,10 @@ p {
   display: none;
 }
 
+.inline-block {
+  display: block;
+}
+
 .block {
   display: block;
 }
@@ -308,7 +312,7 @@ a.link-text {
 
   .form-item {
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
     .form-title {
       width: 80px;

@@ -1,15 +1,21 @@
 <template>
-  <div class="contact-page-wrap">
-    <div class="container">
-      contact me..
-    </div>
-  </div>
+	<div class="contact-page-wrap">
+		<div class="container">
+			contact me..
+			<Contact></Contact>
+		</div>
+	</div>
 </template>
 
 <script>
-export default {
-  name: "contact"
-};
+	import Contact from '../../components/Contact'
+
+	export default {
+		name: "contact",
+		components: {
+			Contact
+		}
+	};
 </script>
 
 <style lang="scss" scoped></style>

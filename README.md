@@ -10,7 +10,7 @@
 ```
 ※ 작업이 되는 대로 하나하나 지울 것입니다.
 - Contact.page
-- Form component
+- 경력 상세에 daum map 추가
 - 이력서&포트폴리오 pdf 다운로드 기능
 - 메일 보내기 기능
 - Scroll top button
