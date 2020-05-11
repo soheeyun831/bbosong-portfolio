@@ -29,12 +29,21 @@ export default {
 
 .btn {
   height: 44px;
+  padding: {
+    left: 12px;
+    right: 12px;
+  };
   color: $basic-color;
   font-size: 15px;
   border: solid 1px $cloud-color;
   border-radius: 6px;
   background-color: $white-color;
+  box-sizing: border-box;
   transition: all 300ms;
   cursor: pointer;
+  &:hover {
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+  }
 }
 </style>

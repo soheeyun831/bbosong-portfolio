@@ -26,7 +26,10 @@
           leave-active-class="fadeOutDown"
         >
           <Article title="i am" v-show="visible.introduction">
-            <p v-html="main.introduction"></p>
+            <p class="pb-20" v-html="main.introduction"></p>
+            <s-button>
+              이력서 다운로드
+            </s-button>
           </Article>
         </transition>
       </article>

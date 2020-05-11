@@ -74,6 +74,31 @@
     },
     {
       "no": 4,
+      "thumbnail": "portfolio/portfolio-hulan.jpg",
+      "title": "휴랜",
+      "start_date": 1577845430000,
+      "end_data": 1580534553000,
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 100
+        },
+        {
+          "type_nm": "design",
+          "part": 100
+        }
+      ],
+      "skill": ["vue.js", "javascript", "html", "css"],
+      "career_no": null,
+      "memo": "원페이지 방식의 웹사이트입니다.",
+      "link": [
+        {
+          "url": "http://www.hulan.co.kr/#/"
+        }
+      ]
+    },
+    {
+      "no": 5,
       "thumbnail": "portfolio/portfolio-zipdoc.jpg",
       "title": "집닥",
       "start_date": 1554096153000,
@@ -95,7 +120,7 @@
       ]
     },
     {
-      "no": 5,
+      "no": 6,
       "thumbnail": "portfolio/portfolio-onsemi.jpg",
       "title": "온새미",
       "start_date": 1561966637000,
@@ -121,7 +146,7 @@
       ]
     },
     {
-      "no": 6,
+      "no": 7,
       "thumbnail": "portfolio/portfolio-triphub.jpg",
       "title": "트립허브",
       "start_date": 1543641753000,
@@ -146,7 +171,7 @@
       ]
     },
     {
-      "no": 7,
+      "no": 8,
       "thumbnail": "portfolio/portfolio-choice-1.jpg",
       "title": "choice1",
       "start_date": 1527830553000,
@@ -176,7 +201,7 @@
       ]
     },
     {
-      "no": 8,
+      "no": 9,
       "thumbnail": "portfolio/portfolio-choice-admin.jpg",
       "title": "choice1 관리자 페이지",
       "start_date": 1527830553000,
@@ -201,7 +226,7 @@
       ]
     },
     {
-      "no": 9,
+      "no": 10,
       "thumbnail": "portfolio/portfolio-aqua.jpg",
       "title": "부천 아쿠아리움",
       "start_date": 1543641753000,
@@ -227,7 +252,7 @@
       ]
     },
     {
-      "no": 10,
+      "no": 11,
       "thumbnail": "portfolio/portfolio-stove.jpg",
       "title": "Onstove 관리자 페이지",
       "start_date": 1501564953000,
