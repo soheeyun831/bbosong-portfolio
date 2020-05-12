@@ -23,7 +23,7 @@
               <ul
                 v-if="
                   careerData.business.detail &&
-                    careerData.business.detail.length > 0
+                  careerData.business.detail.length > 0
                 "
               >
                 <li
@@ -34,7 +34,8 @@
                   ><br />
                   {{ item.info }}
                   <span>개발언어 : {{ item.lang }}</span>
-                  <span>링크 :
+                  <span
+                    >링크 :
                     <!-- eslint-disable vue/no-use-v-if-with-v-for,vue/no-confusing-v-for-v-if -->
                     <span
                       class="link"
@@ -65,14 +66,9 @@
           </dl>
         </Article>
       </article>
-      <article
-        class="career_full_image"
-        :style="{
-          'background-image': `url(${require('@/assets/images/' +
-            careerData.thumbnail)})`,
-          'background-color': careerData.color
-        }"
-      ></article>
+      <article class="career_map">
+        <DaumMap :center="careerData.latLng"></DaumMap>
+      </article>
       <article>
         <h2 class="article-title">
           PORTFOLIO
@@ -86,6 +82,14 @@
           ></CardItem>
         </CardList>
       </article>
+      <article
+        class="career_full_image"
+        :style="{
+          'background-image': `url(${require('@/assets/images/' +
+            careerData.thumbnail)})`,
+          'background-color': careerData.color,
+        }"
+      ></article>
     </div>
   </div>
 </template>
@@ -94,6 +98,7 @@
 import { mapGetters, mapActions } from "vuex";
 import PageHeader from "../../../components/PageHeader";
 import Article from "../../../components/Article";
+import DaumMap from "../../../components/DaumMap";
 import CardList from "../../../components/Card/List";
 import CardItem from "../../../components/Card/Item";
 
@@ -102,12 +107,13 @@ export default {
   components: {
     PageHeader,
     Article,
+    DaumMap,
     CardList,
-    CardItem
+    CardItem,
   },
   computed: {
     ...mapActions("career", ["setCareerData"]),
-    ...mapGetters(["careerData"])
+    ...mapGetters(["careerData"]),
   },
   created() {
     this.$store.dispatch("career/setCareerData", Number(this.$route.params.no));
@@ -121,8 +127,8 @@ export default {
         ? this.$moment(this.careerData.end_date)
         : "재직중";
       return `${startDate} ~ ${endDate}`;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -130,10 +136,14 @@ export default {
 .career_full_image {
   width: 100%;
   height: 320px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 100px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
+  .career_map {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
 </style>

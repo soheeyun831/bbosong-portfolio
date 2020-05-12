@@ -19,10 +19,10 @@ Vue.use(VueMomentJS, moment);
 Vue.use(VueWaypoint);
 
 // polyfill - waypoint IE 지원을 위해..
-require('intersection-observer');
+require("intersection-observer");
 Vue.config.productionTip = false;
 new Vue({
-	router,
-	store,
-	render: h => h(App)
+  router,
+  store,
+  render: (h) => h(App),
 }).$mount("#app");
