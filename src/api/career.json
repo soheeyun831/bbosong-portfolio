@@ -3,6 +3,7 @@
     {
       "no": 1,
       "color": "#EEBFA5",
+      "logo": "career/career-logo-zipdoc.png",
       "thumbnail": "career/career-zipdoc.jpg",
       "title": "집닥",
       "start_date": 1556515353000,
@@ -44,6 +45,7 @@
     {
       "no": 2,
       "color": "#302283",
+      "logo": "career/career-logo-triphub.png",
       "thumbnail": "career/career-triphub.jpg",
       "title": "트립허브",
       "start_date": 1520227353000,
@@ -93,6 +95,7 @@
     {
       "no": 3,
       "color": "#242331",
+      "logo": "career/career-logo-todos.png",
       "thumbnail": "career/career-todos.jpg",
       "title": "투도스",
       "start_date": 1503033753000,

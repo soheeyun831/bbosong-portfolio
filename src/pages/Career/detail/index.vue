@@ -2,6 +2,14 @@
   <div class="career-page-wrap">
     <div v-if="careerData" class="container">
       <PageHeader :title="careerData.title">
+        <label
+          class="logo"
+          slot="label"
+          :style="{
+            'background-image': `url(${require('@/assets/images/' +
+              careerData.logo)})`,
+          }"
+        ></label>
         {{ careerData.info }}
       </PageHeader>
       <article>
@@ -82,14 +90,6 @@
           ></CardItem>
         </CardList>
       </article>
-      <article
-        class="career_full_image"
-        :style="{
-          'background-image': `url(${require('@/assets/images/' +
-            careerData.thumbnail)})`,
-          'background-color': careerData.color,
-        }"
-      ></article>
     </div>
   </div>
 </template>
@@ -141,9 +141,10 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
 }
-  .career_map {
-    width: 100%;
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
+
+.career_map {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 </style>

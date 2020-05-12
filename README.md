@@ -13,11 +13,11 @@
 - 이력서&포트폴리오 pdf 다운로드 기능
 - 메일 보내기 기능
 - Scroll top button
-- Card component style 수정
+- Cursur custom
 - 자기소개
 - FAQ 내용 수정
-- keep-alive 고려
-- main contact image 작업
+- Keep-alive 고려
+- Main page > contact section image 작업
 ```
 
 ### 사용한 플러그인
