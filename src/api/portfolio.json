@@ -5,7 +5,7 @@
       "thumbnail": "portfolio/portfolio-big-o-show.jpg",
       "title": "빅오쇼",
       "start_date": 1583040153000,
-      "end_data": 1583040153000,
+      "end_date": 1583040153000,
       "type": [
         {
           "type_nm": "front-end",
@@ -30,7 +30,7 @@
       "thumbnail": "portfolio/portfolio-part-zipdoc.jpg",
       "title": "집닥 부분 시공",
       "start_date": 1577856153000,
-      "end_data": 1583040153000,
+      "end_date": 1583040153000,
       "type": [
         {
           "type_nm": "front-end",
@@ -51,7 +51,7 @@
       "thumbnail": "portfolio/portfolio-yeosu.jpg",
       "title": "여수해상케이블카",
       "start_date": 1580534553000,
-      "end_data": 1580534553000,
+      "end_date": 1580534553000,
       "type": [
         {
           "type_nm": "front-end",
@@ -77,7 +77,7 @@
       "thumbnail": "portfolio/portfolio-hulan.jpg",
       "title": "휴랜",
       "start_date": 1577845430000,
-      "end_data": 1580534553000,
+      "end_date": 1580534553000,
       "type": [
         {
           "type_nm": "front-end",
@@ -102,7 +102,7 @@
       "thumbnail": "portfolio/portfolio-zipdoc.jpg",
       "title": "집닥",
       "start_date": 1554096153000,
-      "end_data": null,
+      "end_date": null,
       "type": [
         {
           "type_nm": "front-end",
@@ -124,7 +124,7 @@
       "thumbnail": "portfolio/portfolio-onsemi.jpg",
       "title": "온새미",
       "start_date": 1561966637000,
-      "end_data": 1564645037000,
+      "end_date": 1564645037000,
       "type": [
         {
           "type_nm": "front-end",
@@ -150,7 +150,7 @@
       "thumbnail": "portfolio/portfolio-triphub.jpg",
       "title": "트립허브",
       "start_date": 1543641753000,
-      "end_data": 1546320153000,
+      "end_date": 1546320153000,
       "type": [
         {
           "type_nm": "front-end",
@@ -175,7 +175,7 @@
       "thumbnail": "portfolio/portfolio-choice-1.jpg",
       "title": "choice1",
       "start_date": 1527830553000,
-      "end_data": 1548998553000,
+      "end_date": 1548998553000,
       "type": [
         {
           "type_nm": "front-end",
@@ -205,7 +205,7 @@
       "thumbnail": "portfolio/portfolio-choice-admin.jpg",
       "title": "choice1 관리자 페이지",
       "start_date": 1527830553000,
-      "end_data": 1548998553000,
+      "end_date": 1548998553000,
       "type": [
         {
           "type_nm": "front-end",
@@ -230,7 +230,7 @@
       "thumbnail": "portfolio/portfolio-aqua.jpg",
       "title": "부천 아쿠아리움",
       "start_date": 1543641753000,
-      "end_data": 1543641753000,
+      "end_date": 1543641753000,
       "type": [
         {
           "type_nm": "front-end",
@@ -256,7 +256,7 @@
       "thumbnail": "portfolio/portfolio-stove.jpg",
       "title": "Onstove 관리자 페이지",
       "start_date": 1501564953000,
-      "end_data": 1517462553000,
+      "end_date": 1517462553000,
       "type": [
         {
           "type_nm": "front-end",

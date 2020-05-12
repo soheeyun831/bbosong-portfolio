@@ -17,6 +17,7 @@
 - 자기소개
 - FAQ 내용 수정
 - keep-alive 고려
+- main contact image 작업
 ```
 
 ### 사용한 플러그인
