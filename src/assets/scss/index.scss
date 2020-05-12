@@ -413,4 +413,35 @@ h2.article-title {
   }
 }
 
+.dialog {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .dialog-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: $basic-color;
+    box-sizing: border-box;
+
+    .dialog-close {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      position: absolute;
+      top: 7px;
+      right: 10px;
+      cursor: pointer;
+
+      img {
+        width: 46px;
+        height: 46px;
+        display: block;
+      }
+    }
+  }
+}
+
+
 @import "./media";
