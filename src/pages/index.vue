@@ -88,9 +88,9 @@
         </transition>
       </article>
     </div>
-    <div class="main-portfolio container">
+    <div class="main-portfolio">
       <article
-        class=""
+        class="container"
         v-waypoint="{
           active: true,
           callback: portfolioWaypoint,
@@ -162,7 +162,7 @@
           <div v-show="visible.contact">
             <div></div>
             <div class="contact-body">
-              <div class="contact-image"></div>
+              <router-link class="contact-image" to="/contact"></router-link>
               <div class="contact-introduction">
                 <h5>
                   안녕하세요<br />
