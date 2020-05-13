@@ -10,12 +10,10 @@
 ```
 ※ 작업이 되는 대로 하나하나 지울 것입니다.
 - Contact.page
-- 이력서&포트폴리오 pdf 다운로드 기능
+- 이력서 html로 만들어서 pdf download
 - 메일 보내기 기능
 - Scroll top button
 - Cursur custom
-- 자기소개
-- FAQ 내용 수정
 - Keep-alive 고려
 - Main page > contact section image 작업
 ```
@@ -32,6 +30,7 @@
 - intersection-observer (IE11지원을 위해..)
 - vue-daum-map
 - prettier
+- file-saver
 ```
 
 ### portfolio site (demo?)

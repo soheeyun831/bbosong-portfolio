@@ -22,8 +22,6 @@ const mutations = {
       state.portfolioList = state.portfolio;
     } else {
       state.portfolioList = state.portfolio.reduce((pre, obj) => {
-        console.log(obj);
-
         obj.type.forEach(t => {
           if (t.type_nm === v) {
             pre.push(obj);

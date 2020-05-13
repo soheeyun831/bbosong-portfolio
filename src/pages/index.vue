@@ -27,7 +27,7 @@
         >
           <Article title="i am" v-show="visible.introduction">
             <p class="pb-20" v-html="main.introduction"></p>
-            <s-button>
+            <s-button @click="downloadResume">
               이력서 다운로드
             </s-button>
           </Article>
@@ -211,6 +211,7 @@ import SButton from "../components/Element/Button/index";
 require("vue2-animate/dist/vue2-animate.min.css");
 import { mapGetters } from "vuex";
 import { VueTypedJs } from "vue-typed-js";
+import { saveAs } from "file-saver";
 import Article from "../components/Article";
 import CardList from "../components/Card/List";
 import CardItem from "../components/Card/Item";
@@ -275,6 +276,11 @@ export default {
         this.visible[type] = true;
       }
     },
+    downloadResume() {
+      const url =
+        "http://bbosongbbosong.com/portfolio/assets/files/SoheeYun-resume.doc";
+      saveAs(url, "test.doc");
+    },
   },
 };
 </script>
@@ -305,8 +311,8 @@ export default {
         .contact-image {
           flex: 1;
           margin-right: 30px;
-          background-image: url(../assets/images/sohee-logo.png);
-          /*background-size: contain;*/
+          background-image: url(../assets/images/main-contact-image.png);
+          background-size: cover;
           background-repeat: no-repeat;
           background-position: center center;
           box-sizing: border-box;

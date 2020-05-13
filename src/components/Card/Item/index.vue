@@ -44,8 +44,6 @@ export default {
         ? this.$moment(this.item.end_date).format("YYYY.MM")
         : "";
 
-      console.log(endDate);
-      console.log(`${startDate} ~ ${endDate}`);
       return `${startDate} ~ ${endDate}`;
     },
   },

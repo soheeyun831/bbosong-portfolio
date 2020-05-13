@@ -102,9 +102,6 @@ export default {
       Number(this.$route.params.no)
     );
   },
-  mounted() {
-    console.log(this.portfolioData);
-  },
   methods: {
     setWorkDate() {
       const startDate = this.$moment(this.portfolioData.start_date).format(
