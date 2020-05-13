@@ -57,10 +57,6 @@ export default {
   width: 100%;
   position: relative;
   top: 0;
-  overflow: hidden;
-  word-wrap: normal;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 
   &:before {
     width: 100%;
@@ -69,6 +65,12 @@ export default {
     left: 0;
     transition: top 300ms;
   }
+}
+@mixin oneLineText {
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .card {
@@ -162,10 +164,12 @@ export default {
       line-height: 24px;
       letter-spacing: -0.3px;
       @include hoverText;
+      @include oneLineText;
 
       &:before {
         top: -24px;
         height: 24px;
+        @include oneLineText;
       }
     }
 
@@ -176,10 +180,12 @@ export default {
       line-height: 14px;
       letter-spacing: 3px;
       @include hoverText;
+      @include oneLineText;
 
       &:before {
         top: -14px;
         height: 14px;
+        @include oneLineText;
       }
     }
   }
