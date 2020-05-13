@@ -12,8 +12,6 @@
 - Contact.page
 - 이력서 html로 만들어서 pdf download
 - 메일 보내기 기능
-- Scroll top button
-- Cursur custom
 - Keep-alive 고려
 - Main page > contact section image 작업
 ```

@@ -5,6 +5,7 @@
     <section class="app-wrap">
       <router-view :key="key"></router-view>
     </section>
+    <ScrollTop />
     <Footer />
   </div>
 </template>
@@ -12,6 +13,7 @@
 <script>
 import Header from "./components/Header";
 import SideLeft from "./components/Side/left";
+import ScrollTop from "./components/ScrollTop";
 import Footer from "./components/Footer";
 
 export default {
@@ -19,13 +21,14 @@ export default {
   components: {
     Header,
     SideLeft,
-    Footer
+    ScrollTop,
+    Footer,
   },
   computed: {
     key() {
       return this.$route.path;
-    }
-  }
+    },
+  },
 };
 </script>
 
