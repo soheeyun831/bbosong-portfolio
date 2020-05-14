@@ -75,7 +75,7 @@
         </Article>
       </article>
       <article class="career_map">
-        <DaumMap :center="careerData.latLng"></DaumMap>
+        <DaumMap :center.sync="careerData.latLng"></DaumMap>
       </article>
       <article>
         <h2 class="article-title">
@@ -124,7 +124,7 @@ export default {
         "YYYY년 MM월 DD일"
       );
       const endDate = this.careerData.end_date
-        ? this.$moment(this.careerData.end_date)
+        ? this.$moment(this.careerData.end_date).format("YYYY년 MM월 DD일")
         : "재직중";
       return `${startDate} ~ ${endDate}`;
     },

@@ -90,11 +90,11 @@ export default {
   name: "index",
   components: {
     PageHeader,
-    Article
+    Article,
   },
   computed: {
     ...mapActions("portfolio", ["setPortfolioData"]),
-    ...mapGetters(["portfolioData"])
+    ...mapGetters(["portfolioData"]),
   },
   created() {
     this.$store.dispatch(
@@ -108,11 +108,11 @@ export default {
         "YYYY년 MM월 DD일"
       );
       const endDate = this.portfolioData.end_date
-        ? this.$moment(this.portfolioData.end_date)
+        ? this.$moment(this.portfolioData.end_date).format("YYYY년 MM월 DD일")
         : "재직중";
       return `${startDate} ~ ${endDate}`;
-    }
-  }
+    },
+  },
 };
 </script>
 
