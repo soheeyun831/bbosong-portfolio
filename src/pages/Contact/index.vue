@@ -5,8 +5,8 @@
         CONTACT ME
       </h2>
       <p class="main-sub-title">
-        안녕하세요. 저에게 관심이 생기신 분들은 아래 입력란에 작성 후 보내주시면
-        너무 너무 감사하겠습니다. :)
+        안녕하세요. 저에게 관심이 생기신 분들은<br />
+        아래 입력란에 작성 후 보내주시면 너무 너무 감사하겠습니다. :)
       </p>
       <div class="contact-box">
         <div class="contact-left">
