@@ -115,6 +115,7 @@ export default {
   box-sizing: content-box;
   resize: none;
   color: $basic-color;
+  font-size: 14px;
   -webkit-appearance: none;
   -webkit-border-radius: 2px;
   -moz-appearance: none;

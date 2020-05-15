@@ -1,5 +1,5 @@
 <template>
-  <ValidationObserver v-slot="{ handleSubmit }">
+  <ValidationObserver ref="observer" v-slot="{ handleSubmit }">
     <form @submit.prevent="handleSubmit(onSubmit)">
       <slot></slot>
     </form>
@@ -7,22 +7,26 @@
 </template>
 
 <script>
-  import { ValidationObserver } from 'vee-validate';
-	export default {
-		name: "SForm",
-    components: {
-      ValidationObserver
+import { ValidationObserver } from "vee-validate";
+
+export default {
+  name: "SForm",
+  components: {
+    ValidationObserver,
+  },
+  props: {
+    formData: {
+      type: Object,
+      default: undefined,
     },
-		props: {
-      formData: {
-				type: Object,
-				default: undefined
-			}
-		},
-    methods: {
-      onSubmit () {
-        this.$emit('submitData')
-      }
-    }
-	};
+  },
+  methods: {
+    onSubmit() {
+      this.$emit("submitData");
+    },
+    reset() {
+      this.$refs.observer.reset();
+    },
+  },
+};
 </script>

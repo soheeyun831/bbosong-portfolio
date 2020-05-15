@@ -9,11 +9,8 @@
 ### 아직 되지 않은.. TODO LIST
 ```
 ※ 작업이 되는 대로 하나하나 지울 것입니다.
-- Contact.page
 - 이력서 html로 만들어서 pdf download
-- 메일 보내기 기능
 - Keep-alive 고려
-- Main page > contact section image 작업
 ```
 
 ### 사용한 플러그인
@@ -29,6 +26,8 @@
 - vue-daum-map
 - prettier
 - file-saver
+- es6-promise
+- axios
 ```
 
 ### portfolio site (demo?)

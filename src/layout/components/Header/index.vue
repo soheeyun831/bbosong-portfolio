@@ -234,6 +234,7 @@ export default {
   height: 106px;
   padding: 20px 0 0 0;
   position: fixed;
+  top: 0;
   left: 0;
   box-sizing: border-box;
   background-color: transparent;

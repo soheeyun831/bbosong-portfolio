@@ -24,16 +24,16 @@
 		message: '2자 이상 입력해주세요.'
 	});
 	extend("blank", value => {
-		if (value && value.toString().replace(/\s/gi, "").length > 2) {
+		if (value && value.toString().replace(/\s/gi, "").length > 1) {
 			return true;
 		}
 		return "2자 이상 입력해주세요.";
 	});
 	extend("tel", value => {
-		if (value.length < 12 && value.length > 9) {
+		if (value.length < 12 && value.length > 8) {
 			return true;
 		}
-		return "휴대폰 번호는 10자~11자이어야 합니다."
+		return "전화번호는 9자~11자이어야 합니다."
 	});
 	extend("email", value => {
 		const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
