@@ -350,6 +350,7 @@ p.main-sub-title {
   color: $gray-color;
   font-size: 15px;
   text-align: center;
+  line-height: 1.43;
 }
 
 // result dialog
