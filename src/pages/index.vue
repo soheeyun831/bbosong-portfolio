@@ -395,12 +395,13 @@ export default {
         background-color: $white-color;
         cursor: pointer;
 
+        &:hover,
         &.focus {
           border: none;
-          background: $light-on-color;
-          -webkit-box-shadow: inset -1px -2px 0 0 $on-color;
-          -moz-box-shadow: inset -1px -2px 0 0 $on-color;
-          box-shadow: inset -1px -2px 0 0 $on-color;
+          background: #fdda5f;
+          -webkit-box-shadow: inset -1px -2px 0 0 #fd9744;
+          -moz-box-shadow: inset -1px -2px 0 0 #fd9744;
+          box-shadow: inset -1px -2px 0 0 #fd9744;
           position: relative;
 
           .cf {
@@ -504,6 +505,10 @@ export default {
         }
 
         &:hover {
+          background: $light-on-color;
+          -webkit-box-shadow: inset -1px -2px 0 0 $on-color;
+          -moz-box-shadow: inset -1px -2px 0 0 $on-color;
+          box-shadow: inset -1px -2px 0 0 $on-color;
           &:before,
           &:after {
             opacity: 1;
