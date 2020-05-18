@@ -1,7 +1,36 @@
 <template>
-  <div class="main-page-wrap">
+  <div ref="main" class="main-page-wrap">
+    <div class="main-side-right">
+      <ul class="article-list">
+        <li
+          class="article-item"
+          v-for="(item, index) in article"
+          :key="`side-right-${index}`"
+          :class="{ focus: item.focus }"
+          :aria-label="item.label"
+          @click="goArticle(item)"
+        >
+          <div class="eyes cf">
+            <div class="eye eye-right"></div>
+            <div class="eye eye-left"></div>
+          </div>
+          <div class="shy-circles cf">
+            <div class="shy shy-left"></div>
+            <div class="shy shy-right"></div>
+          </div>
+          <div class="mouth"></div>
+        </li>
+      </ul>
+    </div>
     <div class="container">
-      <article class="main-article main-greeting">
+      <article
+        class="main-article main-greeting"
+        v-waypoint="{
+          active: true,
+          callback: mainWaypoint,
+          options: intersectionOptions,
+        }"
+      >
         <vue-typed-js :strings="strings" :type-speed="30">
           <h1><span class="typing"></span></h1>
         </vue-typed-js>
@@ -13,6 +42,7 @@
         </article>
       </article>
       <article
+        ref="introduction"
         class="main-article border-bottom"
         v-waypoint="{
           active: true,
@@ -25,7 +55,7 @@
           enter-active-class="fadeInUp"
           leave-active-class="fadeOutDown"
         >
-          <Article title="i am" v-show="visible.introduction">
+          <Article title="i am" v-show="article.introduction.visible">
             <p class="pb-20" v-html="main.introduction"></p>
             <s-button @click="downloadResume">
               이력서 다운로드
@@ -34,6 +64,7 @@
         </transition>
       </article>
       <article
+        ref="career"
         class="main-article border-bottom"
         v-waypoint="{
           active: true,
@@ -46,7 +77,7 @@
           enter-active-class="fadeInUp"
           leave-active-class="fadeOutDown"
         >
-          <div v-show="visible.career">
+          <div v-show="article.career.visible">
             <h2 class="article-title">
               경력
             </h2>
@@ -62,6 +93,7 @@
         </transition>
       </article>
       <article
+        ref="skills"
         class="main-article"
         v-waypoint="{
           active: true,
@@ -74,7 +106,7 @@
           enter-active-class="fadeInUp"
           leave-active-class="fadeOutDown"
         >
-          <Article title="Skills" v-show="visible.skill">
+          <Article title="Skills" v-show="article.skill.visible">
             <ul>
               <li v-for="(item, index) in main.skill" :key="item.no">
                 <StatusBar
@@ -90,6 +122,7 @@
     </div>
     <div class="main-portfolio">
       <article
+        ref="portfolio"
         class="container"
         v-waypoint="{
           active: true,
@@ -102,7 +135,7 @@
           enter-active-class="fadeInUp"
           leave-active-class="fadeOutDown"
         >
-          <div v-show="visible.portfolio">
+          <div v-show="article.portfolio.visible">
             <h2 class="article-title">
               <router-link to="/portfolio">
                 PORTFOLIO
@@ -127,6 +160,7 @@
     </div>
     <div class="container">
       <article
+        ref="faq"
         class="main-article border-bottom"
         v-waypoint="{
           active: true,
@@ -139,7 +173,7 @@
           enter-active-class="fadeInUp"
           leave-active-class="fadeOutDown"
         >
-          <Article title="FAQ" v-show="visible.faq">
+          <Article title="FAQ" v-show="article.faq.visible">
             <ToggleMessage :list="main.faq" />
           </Article>
         </transition>
@@ -147,6 +181,7 @@
     </div>
     <div class="main-contact container">
       <article
+        ref="contact"
         class="main-article main-contact"
         v-waypoint="{
           active: true,
@@ -159,7 +194,7 @@
           enter-active-class="fadeInUp"
           leave-active-class="fadeOutDown"
         >
-          <div v-show="visible.contact">
+          <div v-show="article.contact.visible">
             <div></div>
             <div class="contact-body">
               <router-link class="contact-image" to="/contact"></router-link>
@@ -217,6 +252,7 @@ import CardList from "../components/Card/List";
 import CardItem from "../components/Card/Item";
 import StatusBar from "../components/StatusBar";
 import ToggleMessage from "../components/ToggleMessage/List";
+import { scrollTo } from "../utils/scroll-to";
 
 export default {
   name: "index",
@@ -241,18 +277,49 @@ export default {
         root: null,
         thresholds: [0, 1],
       }, // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-      visible: {
-        mainImage: false,
-        introduction: false,
-        career: false,
-        skill: false,
-        portfolio: false,
-        faq: false,
-        contact: false,
+      article: {
+        main: {
+          visible: false,
+          focus: false,
+          label: "Main",
+        },
+        introduction: {
+          visible: false,
+          focus: false,
+          label: "Introduction",
+        },
+        career: {
+          visible: false,
+          focus: false,
+          label: "Career",
+        },
+        skill: {
+          visible: false,
+          focus: false,
+          label: "Skills",
+        },
+        portfolio: {
+          visible: false,
+          focus: false,
+          label: "Portfolio",
+        },
+        faq: {
+          visible: false,
+          focus: false,
+          label: "Faq",
+        },
+        contact: {
+          visible: false,
+          focus: false,
+          label: "Contact",
+        },
       },
     };
   },
   methods: {
+    mainWaypoint({ going }) {
+      this.onWaypoint(going, "main");
+    },
     introductionWaypoint({ going }) {
       this.onWaypoint(going, "introduction");
     },
@@ -273,13 +340,26 @@ export default {
     },
     onWaypoint(going, type) {
       if (going === "in") {
-        this.visible[type] = true;
+        this.article[type].visible = true;
+        this.article[type].focus = true;
+      } else {
+        this.article[type].focus = false;
       }
     },
     downloadResume() {
       const url =
         "http://bbosongbbosong.com/portfolio/assets/files/SoheeYun-resume.doc";
       saveAs(url, "test.doc");
+    },
+    goArticle(article) {
+      const positionTop =
+        article === "Main"
+          ? 0
+          : this.$refs[article.label.toLowerCase()].getBoundingClientRect()
+              .top +
+            window.pageYOffset -
+            80;
+      scrollTo(positionTop, 300);
     },
   },
 };
@@ -291,6 +371,158 @@ export default {
 .main-page-wrap {
   width: 100%;
   padding-top: 110px;
+
+  .main-side-right {
+    position: fixed;
+    right: 34px;
+    z-index: 10;
+
+    .article-list {
+      width: 20px;
+      position: relative;
+
+      .article-item {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+        border: 2px solid $light-cloud-color;
+        border-radius: 100%;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+        background-color: $white-color;
+        cursor: pointer;
+
+        &.focus {
+          border: none;
+          background: $light-on-color;
+          -webkit-box-shadow: inset -1px -2px 0 0 $on-color;
+          -moz-box-shadow: inset -1px -2px 0 0 $on-color;
+          box-shadow: inset -1px -2px 0 0 $on-color;
+          position: relative;
+
+          .cf {
+            &.eyes {
+              width: 50%;
+              margin: 0 auto;
+              position: relative;
+              top: 6px;
+
+              .eye {
+                width: 2px;
+                height: 2px;
+                background: $basic-color;
+                border-radius: 100%;
+                -moz-border-radius: 100%;
+                -webkit-border-radius: 100%;
+
+                &.eye-right {
+                  float: right;
+                }
+
+                &.eye-left {
+                  float: left;
+                }
+              }
+            }
+
+            &.shy-circles {
+              width: 80%;
+              margin: 0 auto;
+              position: relative;
+              top: 6px;
+
+              .shy {
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                -moz-border-radius: 100%;
+                -webkit-border-radius: 100%;
+                background: $primary-color;
+
+                &.shy-right {
+                  float: right;
+                }
+
+                &.shy-left {
+                  float: left;
+                }
+              }
+            }
+
+            &:after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+          }
+
+          .mouth {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: transparent;
+            border-bottom: 2px solid $basic-color;
+            position: absolute;
+            left: 50%;
+            top: 5px;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+          }
+        }
+
+        &:before,
+        &:after {
+          position: absolute;
+          opacity: 0;
+          transition: 100ms;
+        }
+
+        &:before {
+          content: "";
+          top: 5px;
+          right: 20px;
+          border: solid 6px transparent;
+          border-left-color: $primary-color;
+        }
+
+        &:after {
+          height: 20px;
+          content: attr(aria-label);
+          top: 2px;
+          right: 30px;
+          padding: 0 0.75rem;
+          color: white;
+          font-size: 13px;
+          line-height: 20px;
+          border-radius: 3px;
+          background-color: $primary-color;
+        }
+
+        &:hover {
+          &:before,
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+
+      &:before {
+        content: " ";
+        z-index: 0;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -1px;
+        background-color: $light-cloud-color;
+      }
+    }
+  }
 
   .main-article {
     width: 100%;
@@ -510,6 +742,10 @@ export default {
 
 @media (max-width: 890px) {
   .main-page-wrap {
+    .main-side-right {
+      display: none;
+    }
+
     h2.article-title {
       .more {
         right: auto;
