@@ -60,10 +60,10 @@
               </dl>
               <dl class="form-item clfix">
                 <dt class="form-title">
-                  회사 주소 <span class="compulsory">*</span>
+                  회사 주소
                 </dt>
                 <dd class="form-control address-form-item">
-                  <s-form-item :rules="['required', 'blank']">
+                  <s-form-item :rules="['blank']">
                     <div class="input-btn-layout clfix">
                       <div class="input-layer" @click="openAddress()">
                         <s-input
