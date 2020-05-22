@@ -348,8 +348,8 @@ export default {
     },
     downloadResume() {
       const url =
-        "http://bbosongbbosong.com/portfolio/assets/files/SoheeYun-resume.doc";
-      saveAs(url, "test.doc");
+        "http://bbosongbbosong.com/portfolio/assets/files/SoheeYun-resume.pdf";
+      saveAs(url, "프론트엔드_윤소희_이력서.pdf");
     },
     goArticle(article) {
       const positionTop =
