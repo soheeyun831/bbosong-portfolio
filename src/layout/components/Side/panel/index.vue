@@ -29,10 +29,30 @@
               <router-link class="career" to="/career">Career</router-link>
             </li>
             <li @click="handleClose">
-              <router-link class="portfolio" to="/portfolio">Portfolio</router-link>
+              <router-link class="portfolio" to="/portfolio"
+                >Portfolio</router-link
+              >
             </li>
             <li @click="handleClose">
-              <router-link class="contact" to="/contact">Contact me</router-link>
+              <router-link class="contact" to="/contact"
+                >Contact me</router-link
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-side-sns">
+          <ul>
+            <li>
+              <a href="https://github.com/soheeyun831/bbosong-portfolio" target="_blank">gitHub</a>
+            </li>
+            <li>
+              <a href="https://bbosong-develop.tistory.com" target="_blank">Blog</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/bbosong_hee/" target="_blank">Instagram</a>
+            </li>
+            <li>
+              <a href="https://open.kakao.com/o/sxEbGCac" target="_blank">KakaoTalk</a>
             </li>
           </ul>
         </div>
@@ -49,11 +69,11 @@ export default {
   props: {
     visible: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   components: {
-    Dialog
+    Dialog,
   },
   watch: {
     visible() {
@@ -67,13 +87,13 @@ export default {
       } else {
         mobileSidePanel.style.right = "-300px";
       }
-    }
+    },
   },
   methods: {
     handleClose() {
       this.$emit("update:visible", false);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -107,12 +127,14 @@ export default {
 
   .gnb-side {
     width: 100%;
-    padding: 70px 30px 15px;
+    padding: 70px 0 16px;
     box-sizing: border-box;
+    overflow-y: auto;
 
     .mobile-side-message {
       width: 100%;
-      padding-bottom: 25px;
+      padding: 0 30px 24px;
+      box-sizing: border-box;
       color: $basic-color;
       font-size: 20px;
       line-height: 1;
@@ -127,10 +149,15 @@ export default {
     }
 
     .mobile-side-menu {
+      width: 100%;
+      padding: 0 30px;
+      box-sizing: border-box;
+      border-bottom: 6px solid $light-cloud-color;
       .menu-list {
         li {
           width: 100%;
           height: 54px;
+
           a {
             width: 100%;
             height: 54px;
@@ -138,31 +165,53 @@ export default {
             padding-left: 34px;
             line-height: 54px;
             box-sizing: border-box;
+
             &.home {
               background-image: url(../../../../assets/images/common/next-black.png),
-              url(../../../../assets/images/common/side-home.png);
+                url(../../../../assets/images/common/side-home.png);
               @include list-bg;
             }
 
             &.career {
               background-image: url(../../../../assets/images/common/next-black.png),
-              url(../../../../assets/images/common/side-career.png);
+                url(../../../../assets/images/common/side-career.png);
               @include list-bg;
             }
 
             &.portfolio {
               background-image: url(../../../../assets/images/common/next-black.png),
-              url(../../../../assets/images/common/side-portfolio.png);
+                url(../../../../assets/images/common/side-portfolio.png);
               @include list-bg;
             }
 
             &.contact {
               background-image: url(../../../../assets/images/common/next-black.png),
-              url(../../../../assets/images/common/side-contact.png);
+                url(../../../../assets/images/common/side-contact.png);
               @include list-bg;
             }
           }
         }
+      }
+    }
+    .mobile-side-sns {
+      width: 100%;
+      padding: 16px 30px;
+      box-sizing: border-box;
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          width: 100%;
+          height: 36px;
+          color: $gray-color;
+          font-size: 14px;
+          line-height: 36px;
+          a {
+            width: 100%;
+            display: inline-block;
+          }
+        }
+
       }
     }
   }
