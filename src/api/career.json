@@ -14,26 +14,39 @@
         "lng": 127.028157
       },
       "business": {
-        "text": "퍼블리싱 / Front-End",
+        "text": "Front-End(신규개발 & 유지보수) / Publishing",
         "detail": [
           {
-            "text": "집닥 부분시공 개발",
-            "info": "원하는 시공에 대해 견적을 넣고 인테리어 정보를 공유하는 시스템",
-            "lang": "Nuxt.js, Vue.js",
+            "text": "집닥 부분시공 서비스 개발 (Front-End)",
+            "info": "고객이 원하는 시공에 대해 예상 금액을 확인하고 파트너사를 연결해주는 시스템",
+            "lang": "Nuxt.js, Vue.js, scss",
             "link": [
               {
                 "url": "https://part.zipdoc.co.kr"
               }
+            ],
+            "works": [
+              "퍼블리싱(scss) (100%)",
+              "사용자 페이지(Nuxt.js) 개발 (60%)",
+              "관리자 페이지(Vue.js & element-ui) 개발 (30%)",
+              "유지보수"
             ]
           },
           {
-            "text": "집닥 유지보수",
-            "info": "인테리어 견적을 넣고 인테리어 정보를 공유하는 시스템",
-            "lang": "Spring, jsp 기반에 vue.js 라이브러리 사용",
+            "text": "집닥 인테리어 서비스 유지보수 (Front-End)",
+            "info": "고객이 인테리어 견적을 넣고 파트너사와 연결해주며, 인테리어 완료 후 after 서비스까지 제공해 주는 시스템",
+            "lang": "Spring, Jsp, Jquery, Vue.js, css, scss",
             "link": [
               {
                 "url": "https://zipdoc.co.kr"
               }
+            ],
+            "works": [
+              "개발에서 css가 아닌 scss 를 사용하기 위해서 scss 코드를 Ruby 를 이용하여 css로 자동 변경 할 수 있도록 적용 (100%)",
+              "기존 중복 / 미사용 css와 script 제거 및 공통화 (진행 중)",
+              "공통 Element Component 개발(Vue.js) (60%)",
+              "유지보수 퍼블리싱(scss) (100%)",
+              "유지보수 기능 개발(Jsp, Jquery, Vue.js) (90%)"
             ]
           }
         ]
@@ -50,17 +63,17 @@
       "title": "트립허브",
       "start_date": 1520227353000,
       "end_date": 1549948953000,
-      "info": "여러가지 기프티콘(레저, 커피, 상품권 등)을 묶어 소비자가 그 중 하나를 택하여 이용할 수 있는 솔루션",
+      "info": "여러가지 상품(레저,커피,상품권 등) 중 하나를 선택하여 이용할 수 있는 시스템",
       "latLng": {
         "lat": 37.484971,
         "lng": 127.125964
       },
       "business": {
-        "text": "시스템 설계 참여 / ERD 작성 / 퍼블리싱 / Front-End / 기본적인 api 개발(CRUD) / 전체적인 디자인 작업 / 기획서 및 제안서 작성",
+        "text": "Front-End(신규개발 & 유지보수) / 시스템 설계 참여 / ERD 작성 / Publishing /기본적인 api 개발(CRUD) / 전체적인 디자인 작업 / 기획서 및 제안서 작성",
         "detail": [
           {
-            "text": "Choice1 개발",
-            "lang": "Spring, jsp",
+            "text": "Choice1 서비스 개발",
+            "lang": "Spring, Jsp, Javascript, jQuery, css, Bootstrap",
             "link": [
               {
                 "state": "LIVE",
@@ -74,15 +87,29 @@
                 "state": "DEV",
                 "url": "http://dev.choice1.co.kr:2003:sample/choice/mobile/auth/page"
               }
+            ],
+            "works": [
+              "시스템 설계 참여 (20%)",
+              "DB 설계 참여 (20%)",
+              "기본적인 CRUD API 개발 (20%)",
+              "디자인 작업(100%)",
+              "퍼블리싱 (100%)",
+              "관리자 페이지(Jsp, Javascript, jQuery, Bootstrap) 개발 (40%)",
+              "사용자 페이지(Jsp, Javascript, jQuery, Bootstrap) 개발 (80%)"
             ]
           },
           {
-            "text": "회사 홈페이지 제작",
-            "lang": "Spring, jsp",
+            "text": "트립허브 홈페이지 개발",
+            "lang": "Spring, Jsp, jQuery, css",
             "link": [
               {
                 "url": "http://www.triphub.co.kr/"
               }
+            ],
+            "works": [
+              "디자인 작업(100%)",
+              "퍼블리싱 (100%)",
+              "사용자 페이지(Jsp, Javscript, jQuery) 개발 (100%)"
             ]
           }
         ]
@@ -101,6 +128,7 @@
       "start_date": 1503033753000,
       "end_date": 1519795353000,
       "info": "컨설팅부터, 기획, 디자인, 개발, 마케팅까지의 통합서비스를 제공",
+      "text": "Front-End(유지보수)",
       "latLng": {
         "lat": 37.517746,
         "lng": 127.017902
@@ -117,6 +145,12 @@
               {
                 "url": "http://partners.onstove.com"
               }
+            ],
+            "works": [
+              "기본적인 CRUD API 개발 (10%)",
+              "기존 중복 / 미사용 css와 script 제거 및 공통화 (30%)",
+              "관리자페이지 개발 (Jsp, Javscript, jQuery) (약 6 페이지)",
+              "4개 국어 관리"
             ]
           }
         ]

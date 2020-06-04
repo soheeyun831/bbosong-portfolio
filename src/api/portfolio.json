@@ -16,13 +16,18 @@
           "part": 100
         }
       ],
-      "skill": ["html", "css", "jquery"],
+      "skill": ["Html", "Css", "jQuery"],
       "career_no": null,
       "memo": null,
       "link": [
         {
           "url": "http://bigo.expo2012.kr/"
         }
+      ],
+      "works": [
+        "디자인 작업 (100%)",
+        "퍼블리싱 (100%)",
+        "사용자 페이지(Javascript, jQuery) 개발 (100%)"
       ]
     },
     {
@@ -37,13 +42,20 @@
           "part": 70
         }
       ],
-      "skill": ["javascript", "nuxt.js", "vue.js"],
+      "skill": ["Javascript", "Nuxt.js", "Vue.js", "Scss"],
       "career_no": 1,
       "memo": null,
       "link": [
         {
           "url": "https://part.zipdoc.co.kr/"
         }
+      ],
+      "service": "고객이 원하는 시공에 대해 예상 금액을 확인하고 파트너사를 연결해주는 시스템",
+      "works": [
+        "퍼블리싱(scss) (100%)",
+        "사용자 페이지(Nuxt.js) 개발 (60%)",
+        "관리자 페이지(Vue.js & element-ui) 개발 (30%)",
+        "유지보수"
       ]
     },
     {
@@ -62,7 +74,7 @@
           "part": 100
         }
       ],
-      "skill": ["html", "css", "jquery"],
+      "skill": ["Html", "Css", "jQuery"],
       "career_no": null,
       "memo": null,
       "link": [
@@ -70,6 +82,11 @@
           "state": "준비중/임시URL",
           "url": "http://bbosongbbosong.com/yeosu/pages/"
         }
+      ],
+      "works": [
+        "디자인 작업 (100%)",
+        "퍼블리싱 (100%)",
+        "사용자 페이지(Javascript, jQuery) 개발 (100%)"
       ]
     },
     {
@@ -88,13 +105,19 @@
           "part": 100
         }
       ],
-      "skill": ["vue.js", "javascript", "html", "css"],
+      "skill": ["Vue.js", "Javascript", "Html", "Scss", "Css"],
       "career_no": null,
       "memo": "원페이지 방식의 웹사이트입니다.",
       "link": [
         {
           "url": "http://www.hulan.co.kr/#/"
         }
+      ],
+      "service": "국내 유일 어플리케이션 기반 안전관리 시스템",
+      "works": [
+        "디자인 작업 (100%)",
+        "퍼블리싱(scss) (100%)",
+        "사용자 페이지(Vue.js, Javascript) 개발 (100%)"
       ]
     },
     {
@@ -109,7 +132,7 @@
           "part": 80
         }
       ],
-      "skill": ["javascript", "jquery", "vue.js", "jsp"],
+      "skill": ["Javascript", "jQuery", "Vue.js", "Jsp", "Css", "Scss"],
       "career_no": 1,
       "memo": null,
       "link": [
@@ -117,6 +140,14 @@
           "url": "https://zipdoc.co.kr/",
           "state": "유지보수"
         }
+      ],
+      "service": "고객이 인테리어 견적을 넣고 파트너사와 연결해주며, 인테리어 완료 후 after 서비스까지 제공해 주는 시스템",
+      "works": [
+        "개발에서 css가 아닌 scss 를 사용하기 위해서 scss 코드를 Ruby 를 이용하여 css로 자동 변경 할 수 있도록 적용 (100%)",
+        "기존 중복 / 미사용 css와 script 제거 및 공통화 (진행 중)",
+        "공통 Element Component 개발(Vue.js) (60%)",
+        "유지보수 퍼블리싱(scss) (100%)",
+        "유지보수 기능 개발(Jsp, Jquery, Vue.js) (90%)"
       ]
     },
     {
@@ -135,7 +166,7 @@
           "part": 100
         }
       ],
-      "skill": ["javascript", "vue.js", "html", "css"],
+      "skill": ["Javascript", "Vue.js", "Html", "Scss", "Css"],
       "career_no": null,
       "memo": "긴급하게 2주간 작업했던 프로젝트로 1차 개발은 모바일 기준으로만 작업하였습니다.",
       "link": [
@@ -143,6 +174,11 @@
           "state": "소멸/임시URL",
           "url": "http://bbosongbbosong.com/onsemi/#/"
         }
+      ],
+      "works": [
+        "디자인 작업 (100%)",
+        "퍼블리싱(scss) (100%)",
+        "사용자 페이지(Vue.js, Javascript) 개발 (100%)"
       ]
     },
     {
@@ -161,13 +197,18 @@
           "part": 100
         }
       ],
-      "skill": ["javascript", "jquery", "jsp"],
+      "skill": ["Javascript", "jQuery", "Jsp"],
       "career_no": 2,
       "memo": null,
       "link": [
         {
           "url": "http://www.triphub.co.kr/"
         }
+      ],
+      "works": [
+        "디자인 작업 (100%)",
+        "퍼블리싱 (100%)",
+        "사용자 페이지(Jsp, Javascript, jQuery) 개발 (100%)"
       ]
     },
     {
@@ -186,7 +227,7 @@
           "part": 100
         }
       ],
-      "skill": ["javascript", "jquery", "jsp"],
+      "skill": ["Javascript", "jQuery", "Jsp"],
       "career_no": 2,
       "memo": null,
       "link": [
@@ -198,6 +239,15 @@
           "state": "LIVE",
           "url": "https://www.choice1.co.kr"
         }
+      ],
+      "service": "여러가지 상품(레저,커피,상품권 등) 중 하나를 선택하여 이용할 수 있는 시스템",
+      "works": [
+        "시스템 설계 참여 (20%)",
+        "DB 설계 참여 (20%)",
+        "기본적인 CRUD API 개발 (20%)",
+        "디자인 작업(100%)",
+        "퍼블리싱 (100%)",
+        "관리자 페이지(Jsp, Javascript, jQuery, Bootstrap) 개발 (40%)"
       ]
     },
     {
@@ -216,13 +266,20 @@
           "part": 100
         }
       ],
-      "skill": ["javascript", "jquery", "jsp"],
+      "skill": ["Javascript", "jQuery", "Jsp"],
       "career_no": 2,
       "memo": "spring boot mybatis 환경에서 restful api 로 작업(기본적인 curd)",
       "link": [
         {
           "url": "https://www.choice1.co.kr/admin/auth/login/page"
         }
+      ],
+      "service": "여러가지 상품(레저,커피,상품권 등) 중 하나를 선택하여 이용할 수 있는 시스템",
+      "works": [
+        "시스템 설계 참여 (20%)",
+        "DB 설계 참여 (20%)",
+        "기본적인 CRUD API 개발 (20%)",
+        "사용자 페이지(Jsp, Javascript, jQuery, Bootstrap) 개발 (80%)"
       ]
     },
     {
@@ -241,7 +298,7 @@
           "part": 100
         }
       ],
-      "skill": ["javascript", "jquery", "jsp"],
+      "skill": ["Javascript", "jQuery", "Jsp"],
       "career_no": null,
       "memo": null,
       "link": [
@@ -249,6 +306,11 @@
           "state": "임시URL",
           "url": "http://bbosongbbosong.com/auqua/"
         }
+      ],
+      "works": [
+        "디자인 작업 (100%)",
+        "퍼블리싱 (100%)",
+        "사용자 페이지(Javascript, jQuery) 개발 (100%)"
       ]
     },
     {
@@ -263,7 +325,7 @@
           "part": 20
         }
       ],
-      "skill": ["javascript", "jquery", "jsp"],
+      "skill": ["Javascript", "jQuery", "Jsp"],
       "career_no": 3,
       "memo": null,
       "link": [
@@ -271,6 +333,12 @@
           "state": "유지보수",
           "url": "http://partners.onstove.com"
         }
+      ],
+      "works": [
+        "기본적인 CRUD API 개발 (10%)",
+        "기존 중복 / 미사용 css와 script 제거 및 공통화 (30%)",
+        "관리자페이지 개발 (Jsp, Javscript, jQuery) (약 6 페이지)",
+        "4개 국어 관리"
       ]
     }
   ]

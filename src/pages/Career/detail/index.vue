@@ -57,6 +57,19 @@
                       {{ obj.state ? `(${obj.state})` : "" }}
                     </span>
                   </span>
+                  <span>
+                    담당업무 :
+                    <!-- eslint-disable vue/no-use-v-if-with-v-for,vue/no-confusing-v-for-v-if -->
+                    <br />
+                    <span
+                      class="link"
+                      v-if="item.works && item.works.length > 0"
+                      v-for="(obj, index) in item.works"
+                      :key="`works-${index}`"
+                    >
+                      : {{ obj }}
+                    </span>
+                  </span>
                 </li>
               </ul>
             </dd>

@@ -12,18 +12,12 @@
               {{ setWorkDate() }}
             </dd>
           </dl>
-          <dl class="info-description-item clfix">
+          <dl v-if="portfolioData.service" class="info-description-item clfix">
             <dt class="info-description-title">
-              담당 업무
+              서비스
             </dt>
             <dd class="info-description-description">
-              <span
-                v-for="(item, ind) in portfolioData.type"
-                :key="`type-${ind}`"
-              >
-                {{ item.type_nm }} {{ item.part }}%
-                {{ ind + 1 === portfolioData.type.length ? "" : ", " }}
-              </span>
+              {{ portfolioData.service }}
             </dd>
           </dl>
           <dl class="info-description-item clfix">
@@ -56,6 +50,22 @@
                 <a :href="item.url" target="_blank">{{ item.url }}</a>
                 {{ item.state ? `(${item.state})` : "" }}
               </span>
+            </dd>
+          </dl>
+          <dl class="info-description-item clfix">
+            <dt class="info-description-title">
+              담당 업무
+            </dt>
+            <dd class="info-description-description">
+              <ul class="works-list">
+                <li
+                  class="link"
+                  v-for="(obj, index) in portfolioData.works"
+                  :key="`works-${index}`"
+                >
+                  {{ obj }}
+                </li>
+              </ul>
             </dd>
           </dl>
           <dl class="info-description-item clfix" v-if="portfolioData.memo">
@@ -122,5 +132,25 @@ export default {
   min-height: 500px;
   border: 1px solid #dddddd;
   border-radius: 6px;
+}
+
+.info-description-item {
+  .info-description-description {
+    .works-list {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        &:before {
+          content: "-";
+        }
+      }
+    }
+  }
 }
 </style>
