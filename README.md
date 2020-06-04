@@ -32,5 +32,10 @@
 
 ### portfolio site (demo?)
 ```
-http://bbosongbbosong.com/#/
+http://bbosongbbosong.com
+```
+
+### blog
+```
+https://bbosong-develop.tistory.com/
 ```
