@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve:local": "vue-cli-service serve --mode development",
-    "build:local": "vue-cli-service build --mode development",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -13,29 +13,29 @@
     "es6-promise": "^4.2.8",
     "file-saver": "^2.0.2",
     "intersection-observer": "^0.10.0",
-    "moment": "^2.24.0",
-    "node-sass": "^4.13.1",
+    "moment": "^2.26.0",
+    "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
     "vue-daum-map": "^1.0.15",
     "vue-momentjs": "^0.1.2",
-    "vue-router": "^3.1.6",
+    "vue-router": "^3.3.2",
     "vue-typed-js": "^0.1.2",
     "vue-waypoint": "^3.4.1",
     "vue2-animate": "^2.1.3",
-    "vuex": "^3.2.0"
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.3.0",
-    "@vue/cli-plugin-eslint": "~4.3.0",
-    "@vue/cli-service": "~4.3.0",
+    "@vue/cli-plugin-babel": "^4.4.1",
+    "@vue/cli-plugin-eslint": "^4.4.1",
+    "@vue/cli-service": "^4.4.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "2.0.5",
-    "vee-validate": "^3.3.0",
+    "vee-validate": "^3.3.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
