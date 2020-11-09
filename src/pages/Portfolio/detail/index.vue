@@ -82,7 +82,8 @@
         <Article title="view">
           <iframe
             class="portfolio-view"
-            title="Inline Frame Example"
+            title="Portfolio site"
+            :class="{ locked: portfolioData.title === '스마트 안전모니터' }"
             :src="portfolioData.link[0].url"
           ></iframe>
         </Article>
@@ -132,6 +133,10 @@ export default {
   min-height: 500px;
   border: 1px solid #dddddd;
   border-radius: 6px;
+
+  &.locked {
+    min-height: 650px;
+  }
 }
 
 .info-description-item {

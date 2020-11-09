@@ -40,10 +40,6 @@
         {
           "type_nm": "front-end",
           "part": 100
-        },
-        {
-          "type_nm": "design",
-          "part": 100
         }
       ],
       "skill": ["Javascript", "Vue.js", "Scss"],
@@ -68,11 +64,7 @@
       "type": [
         {
           "type_nm": "front-end",
-          "part": 100
-        },
-        {
-          "type_nm": "design",
-          "part": 100
+          "part": 60
         }
       ],
       "skill": ["Javascript", "Vue.js", "Scss"],
@@ -93,25 +85,20 @@
       "type": [
         {
           "type_nm": "front-end",
-          "part": 100
-        },
-        {
-          "type_nm": "design",
-          "part": 100
+          "part": 40
         }
       ],
       "skill": ["Javascript", "Vue.js", "Scss"],
       "career_no": null,
-      "memo": null,
+      "memo": "1920x1080 고정 어드민",
       "link": [
         {
-          "url": "http://bigo.expo2012.kr/"
+          "url": "http://ssm.hulandev.co.kr/login"
         }
       ],
       "works": [
-        "디자인 작업 (100%)",
         "퍼블리싱 (100%)",
-        "사용자 페이지(Javascript, jQuery) 개발 (100%)"
+        "사용자 페이지(Vue.js) 개발 (40%)"
       ]
     },
     {
