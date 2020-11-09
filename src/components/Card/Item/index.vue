@@ -44,6 +44,10 @@ export default {
         ? this.$moment(this.item.end_date).format("YYYY.MM")
         : "";
 
+      if(startDate === endDate) {
+        return startDate
+      }
+
       return `${startDate} ~ ${endDate}`;
     },
   },
