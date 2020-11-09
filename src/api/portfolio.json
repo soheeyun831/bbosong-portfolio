@@ -2,6 +2,120 @@
   "list": [
     {
       "no": 1,
+      "thumbnail": "portfolio/portfolio-meditop.jpg",
+      "title": "메디탑",
+      "start_date": 1604242800000,
+      "end_date": 0,
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 100
+        },
+        {
+          "type_nm": "design",
+          "part": 100
+        }
+      ],
+      "skill": ["Javascript", "Vue.js", "Scss"],
+      "career_no": null,
+      "memo": null,
+      "link": [
+        {
+          "url": "http://dev.meditop21c.com/main/"
+        }
+      ],
+      "works": [
+        "디자인 작업 (100%)",
+        "퍼블리싱 (100%)",
+        "사용자 페이지(Vue.js) 개발 (100%)"
+      ]
+    },
+    {
+      "no": 2,
+      "thumbnail": "portfolio/portfolio-jellagen.jpg",
+      "title": "젤라젠",
+      "start_date": 1603033200000,
+      "end_date": 1604242800000,
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 100
+        },
+        {
+          "type_nm": "design",
+          "part": 100
+        }
+      ],
+      "skill": ["Javascript", "Vue.js", "Scss"],
+      "career_no": null,
+      "memo": "해외 사이트를 한국어 버전으로 제작",
+      "link": [
+        {
+          "url": "http://dev.jellagen.co.kr/main/"
+        }
+      ],
+      "works": [
+        "퍼블리싱 (100%)",
+        "사용자 페이지(Vue.js) 개발 (100%)"
+      ]
+    },
+    {
+      "no": 3,
+      "thumbnail": "portfolio/portfolio-zikim360.jpg",
+      "title": "지킴360 웹뷰",
+      "start_date": 1600873200000,
+      "end_date": 1602774000000,
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 100
+        },
+        {
+          "type_nm": "design",
+          "part": 100
+        }
+      ],
+      "skill": ["Javascript", "Vue.js", "Scss"],
+      "career_no": null,
+      "memo": "아직 앱스토어 배포 전입니다.",
+      "link": [],
+      "works": [
+        "퍼블리싱 (100%)",
+        "사용자 페이지(Vue.js) 개발 (60%)"
+      ]
+    },
+    {
+      "no": 4,
+      "thumbnail": "portfolio/portfolio-monitor.jpg",
+      "title": "스마트 안전모니터",
+      "start_date": 1601823600000,
+      "end_date": 1602774000000,
+      "type": [
+        {
+          "type_nm": "front-end",
+          "part": 100
+        },
+        {
+          "type_nm": "design",
+          "part": 100
+        }
+      ],
+      "skill": ["Javascript", "Vue.js", "Scss"],
+      "career_no": null,
+      "memo": null,
+      "link": [
+        {
+          "url": "http://bigo.expo2012.kr/"
+        }
+      ],
+      "works": [
+        "디자인 작업 (100%)",
+        "퍼블리싱 (100%)",
+        "사용자 페이지(Javascript, jQuery) 개발 (100%)"
+      ]
+    },
+    {
+      "no": 5,
       "thumbnail": "portfolio/portfolio-big-o-show.jpg",
       "title": "빅오쇼",
       "start_date": 1583040153000,
@@ -31,7 +145,7 @@
       ]
     },
     {
-      "no": 2,
+      "no": 6,
       "thumbnail": "portfolio/portfolio-part-zipdoc.jpg",
       "title": "집닥 부분 시공",
       "start_date": 1577856153000,
@@ -59,7 +173,7 @@
       ]
     },
     {
-      "no": 3,
+      "no": 7,
       "thumbnail": "portfolio/portfolio-yeosu.jpg",
       "title": "여수해상케이블카",
       "start_date": 1580534553000,
@@ -90,7 +204,7 @@
       ]
     },
     {
-      "no": 4,
+      "no": 8,
       "thumbnail": "portfolio/portfolio-hulan.jpg",
       "title": "휴랜",
       "start_date": 1577845430000,
@@ -121,7 +235,7 @@
       ]
     },
     {
-      "no": 5,
+      "no": 9,
       "thumbnail": "portfolio/portfolio-zipdoc.jpg",
       "title": "집닥",
       "start_date": 1554096153000,
@@ -151,7 +265,7 @@
       ]
     },
     {
-      "no": 6,
+      "no": 10,
       "thumbnail": "portfolio/portfolio-onsemi.jpg",
       "title": "온새미",
       "start_date": 1561966637000,
@@ -182,7 +296,7 @@
       ]
     },
     {
-      "no": 7,
+      "no": 11,
       "thumbnail": "portfolio/portfolio-triphub.jpg",
       "title": "트립허브",
       "start_date": 1543641753000,
@@ -212,7 +326,7 @@
       ]
     },
     {
-      "no": 8,
+      "no": 12,
       "thumbnail": "portfolio/portfolio-choice-1.jpg",
       "title": "choice1",
       "start_date": 1527830553000,
@@ -251,7 +365,7 @@
       ]
     },
     {
-      "no": 9,
+      "no": 13,
       "thumbnail": "portfolio/portfolio-choice-admin.jpg",
       "title": "choice1 관리자 페이지",
       "start_date": 1527830553000,
@@ -283,7 +397,7 @@
       ]
     },
     {
-      "no": 10,
+      "no": 14,
       "thumbnail": "portfolio/portfolio-aqua.jpg",
       "title": "부천 아쿠아리움",
       "start_date": 1543641753000,
@@ -314,7 +428,7 @@
       ]
     },
     {
-      "no": 11,
+      "no": 15,
       "thumbnail": "portfolio/portfolio-stove.jpg",
       "title": "Onstove 관리자 페이지",
       "start_date": 1501564953000,
